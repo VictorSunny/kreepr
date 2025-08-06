@@ -1,0 +1,141 @@
+
+
+:root {
+   --color-base: #F1F2F1;
+   --color-white: #F1F2F1;
+   --color-black: #0A0909;
+   --color-base-complimentary: hsl(56, 16%, 82%);
+   /* --color-base-complimentary: hsl(66, 72%, 80%); */
+   --color-primary: #f5700a;
+   --color-large-text: #141414;
+   --color-medium-text: #232929;
+   --color-low-text: #475252;
+   --color-disabled: #6d7e7e;
+   --color-success: #26D198;
+   --color-danger: #D60404;
+}
+
+.dark {      
+   --color-base: #232323;
+   --color-base-complimentary: #0A0909;
+   --color-primary: #f5700a;
+   --color-large-text: #F1F2F1;
+   --color-medium-text: #F1F2F1;
+   --color-low-text: #bdc2bd;
+   --color-disabled-text: #5f6d6d;
+   --color-success: #26D198;
+   --color-danger: #FF4C4C;
+}
+
+@media (prefers-color-scheme: dark) {
+   .dark {      
+      --color-base: #232323;
+      --color-base-complimentary: #0A0909;
+      --color-primary: #f5700a;
+      --color-large-text: #F1F2F1;
+      --color-medium-text: #F1F2F1;
+      --color-low-text: #F1F2F1;
+      --color-low-sub-text: #F1F2F1;
+      --color-disabled-text: #5f6d6d;
+      --color-success: #26D198;
+      --color-danger: #FF4C4C;
+   }
+}
+
+
+main, .hero-carousel, footer {
+    background-color: var(--color-base);
+    color: var(--color-medium-text);
+}
+
+header, footer, .coin-percent-change  {
+   background-color: var(--color-base);
+   color: var(--color-large-text);
+}
+
+.title {
+   color: var(--color-medium-text);
+}
+a {
+   color: var(--color-primary);
+   text-decoration: none;
+}
+
+.site-logo-link {
+   color: var(--color-primary);
+}
+.nav-link-btn {
+   color: var(--color-large-text);
+}
+
+.popular-coin-card {
+   color: var(--color-medium-text);
+   border-color: var(--color-primary);
+   transition: 0.15s;
+}
+
+.popular-coin-card:active {
+   border-color: var(--color-medium-text);
+}
+
+.popular-coin-card:active .coin-percent-change {
+   color: var(--color-primary);
+}
+.popular-coin-card:active .popular-coin-card-section {
+   border-color: var(--color-base);
+}
+.popular-coin-card:active, .popular-coin-card:active .coin-meta {
+   color: var(--color-base);
+}
+
+.popular-coin-card-section {
+   border-color: var(--color-primary);
+}
+
+
+#search-bar {
+   background-color: var(--color-primary);
+   color: var(--color-white);
+   transition: 0.15s;
+}
+
+
+#search-bar:focus {
+   outline: none;
+   background-color: var(--color-base-complimentary);
+   border-color: var(--color-primary);
+   color: var(--color-large-text);
+}
+
+#search-bar:focus::placeholder {
+   color: var(--color-low-text);
+}
+
+#search-bar::placeholder {
+   color: var(--color-white);
+}
+
+
+.active-nav-link-btn {
+   color: var(--color-white);
+   background-color: var(--color-primary);
+}
+
+.footer-section-title {
+   color: var(--color-medium-text);
+}
+
+@media (min-width: 992px) {
+   .popular-coin-card:hover {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+   }
+   
+   .popular-coin-card:hover .coin-percent-change {
+      color: var(--color-primary);
+   }
+   .popular-coin-card:hover .popular-coin-card-section {
+      border-color: var(--color-base);
+   }
+
+}

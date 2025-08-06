@@ -1,0 +1,113 @@
+
+.hero-carousel {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding-block: 0.8rem;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.8rem rgba(100, 100, 100, 0.4);
+    justify-self: center;
+    /* align-items: center; */
+    place-self: center;
+    place-items: center;
+}
+
+.hero-slider-container {
+    height: 100%;
+    display: flex;
+    min-width: 100%;
+    position: relative;
+}
+
+.hero-slider-container::before, .hero-slider-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 4rem;
+    z-index: 1;
+}
+.hero-slider-container::before {
+    left: 0;
+    background-image: linear-gradient(to right, var(--color-base), transparent);
+}
+.hero-slider-container::after {
+    right: 0;
+    background-image: linear-gradient(to left, var(--color-base), transparent);
+}
+
+.hero-slider {
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    animation: slide 40s infinite linear;
+}
+
+.hero-coin-flyer {
+    height: 100%;
+    margin-inline: 3.2rem;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    font-size: 1.2rem;
+}
+
+.hero-icon {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    fill: var(--color-primary);
+    transition: 0.4s;
+}
+
+.hero-coin-flyer > * {
+    align-self: center;
+}
+
+.hero-coin-flyer .hero-coin-ticker, .hero-coin-flyer .hero-coin-name{
+    color: var(--color-low-text);
+}
+.hero-coin-flyer .hero-coin-name {
+    font-size: 1.1rem;
+    margin-left: 0.4rem;
+}
+
+.hero-coin-ticker {
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .hero-carousel {
+        box-shadow: none;
+        border-bottom: 0.2rem solid rgba(100, 100, 100, 0.4);
+    }
+
+    .dark .hero-carousel {
+        border-color: rgba(220, 220, 220, 0.4);
+    }
+    .dark .hero-coin-flyer .hero-coin-name {
+        color: var(--color-low-text);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hero-slider-container::before, .hero-slider-container::after {
+        width: 24rem;
+    }
+    .hero-carousel:hover .hero-icon {
+        scale: 1.5;
+    }
+}
+
+
+@keyframes slide {
+    to {
+        transform: translate(-100%);
+    }
+}

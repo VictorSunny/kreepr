@@ -1,0 +1,50 @@
+
+#search-bar {
+    height: 3.2rem;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    font-size: inherit;
+    border: 0.2em solid transparent;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+#search-bar-container {
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+#floating-search-dialogue {
+    position: static;
+    z-index: 3;
+}
+
+#search-dialogue-container {
+    position: relative;
+}
+
+#floating-search-dialogue-close-btn {
+    height: 1.6rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+}
+
+.dialogue-close-icon {
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    fill: var(--color-white);
+}
+
+@media (min-width: 992px) {
+    #search-bar {
+        height: 2.4rem;
+    }
+}
+

@@ -1,0 +1,23 @@
+.coin-percent-change {
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    transition: 0.15s;
+    text-align: center;
+}
+
+.positive-percent {
+    color: green;
+}
+.negative-percent {
+    color: var(--color-danger);
+}
+.dark .positive-percent {
+    color: var(--color-success);
+}
+.dark .negative-percent {
+    color: var(--color-danger);
+}
+.dark .coin-percent-change {
+    background-color: var(--color-base-complimentary);
+    color: var(--color-medium-text);
+}

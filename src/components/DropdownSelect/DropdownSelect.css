@@ -1,0 +1,121 @@
+
+.dropdown-container {
+    position: relative;
+    z-index: 5;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.dropdown-content {
+    place-items: end;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    right: 0;
+    z-index: inherit;
+}
+    
+.dropdown-container button,
+.dropdown-container option {
+    z-index: inherit;
+}
+
+.dropdown-options-container {
+    display: none;
+    padding: 0.4rem 0.8rem;
+    text-align: left;
+    transform:translateY(-10%);
+    animation: slideDown 0.2s ease-in-out forwards;
+    background-color: var(--color-base);
+    color: var(--color-medium-text);
+    height: max-content;
+    max-height: 24rem;
+    contain: content;
+    overflow-y: scroll;
+    word-wrap: wrap;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.dropdown-btn, .dropdown-options-container {
+    border: none;
+    text-wrap: nowrap;
+    border: 0.2rem solid var(--color-primary);
+    border-radius: 0.4rem;
+    width: max-content;
+}
+
+
+.dropdown-btn {
+    height: 100%;
+    font-size: 1rem;
+    padding: 0.4rem;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-btn::after {
+    content: url('../../assets/icons/sort-arrows-white-icon.svg');
+    width: 0.6rem;
+    height: 100%;
+    display: inline-block;
+    margin-left: 1.6rem;
+    vertical-align: middle;
+}
+
+.show-dropdown {
+    display: block;
+
+}
+
+.dropdown-options-container::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+.dropdown-btn:focus {
+    outline: none;
+}
+
+
+.dropdown-options-container option {
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 0.4rem 1.6rem;
+    border: 0.2rem solid transparent;
+    border-radius: 0.2rem;
+    border-inline: none;
+}
+
+.selected-dropdown-option {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.dropdown-options-container option:first-child {
+    border-top: none;
+}
+.dropdown-options-container option:last-child {
+    border-bottom: none;
+}
+@media (min-width: 992px) {
+
+
+    .dropdown-options-container option:hover {
+        border-color: var(--color-primary);
+    }
+    .dropdown-btn:hover::after {
+        content: url('../../assets/icons/sort-arrows-orange-icon.svg');
+    }
+
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}

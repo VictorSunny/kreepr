@@ -1,0 +1,16 @@
+
+.theme-toggle-btn {
+    background-color: transparent;
+    fill: var(--color-primary);
+    border: none;
+}
+
+.theme-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.dark .theme-toggle-btn {
+    background-color: var(--color-primary);
+    fill: var(--color-white);
+}

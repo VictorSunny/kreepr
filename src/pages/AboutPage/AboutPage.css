@@ -1,0 +1,105 @@
+
+
+.about-page-container {
+    padding-top: 1.6rem;
+    font-size: 1.1rem;
+}
+
+h1.about-title {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.about-page-container .section:not(:last-child) {
+    padding-bottom: 3.2rem;
+}
+
+.about-page-container .about-title {
+    margin-bottom: 0.8rem;
+}
+
+#tech-stack-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: max-content;
+    justify-self: center;
+    margin-block: 0.8rem;
+    font-family: 'roboto-serif', 'Times New Roman', Times, serif;
+    color: var(--color-large-text);
+    border: 0.2rem solid var(--color-base-complimentary);
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    z-index: 2;
+    position: relative;
+    background-color: var(--color-base);
+}
+
+#tech-stack-list li {
+    padding: 0.4rem;
+}
+#tech-stack-list li em {
+    color: var(--color-medium-text);
+    font-size: 0.8rem;
+}
+
+#tech-stack-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+#tech-stack-list li:nth-last-of-type(even) {
+    background-color: var(--color-base-complimentary);
+}
+#tech-stack-list li:last-child,
+#tech-stack-list li:last-child em {
+    grid-column: 2;
+    background-color: var(--color-base-complimentary);
+}
+
+.tech-stack-hero-section {
+    position: relative;
+}
+
+.about-hero-slider {
+    position: static;
+    margin-block: 0.8rem;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+}
+.about-hero-slider:hover * img {
+    scale: 1 !important;
+}
+
+.about-hero-slider .hero-slider {
+    animation-duration: 10s !important;
+}
+
+
+.about-hero-slider .hero-icon {
+    height: 4rem;
+    width: max-content;
+    border-radius: 0;
+}
+
+
+@media (min-width: 992px) {
+
+    .about-page-container{
+        padding-bottom: 8rem;
+    }
+    #tech-stack-list  {
+        box-shadow: 0rem 0rem 0.8rem rgba(0, 0 , 0, 0.4);
+    }
+    .dark #tech-stack-list  {
+        box-shadow: 0rem 0rem 0.8rem rgba(255, 255 , 255, 0.4);
+    }
+    .about-hero-slider {
+        position: absolute !important;
+        inset: 0 0 0 0;
+        z-index: 1 !important;
+    }
+    .about-hero-slider .hero-icon {
+        height: 6.4rem;
+    }
+}

@@ -1,0 +1,110 @@
+
+.coin-logo {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.popular-coin-card {
+    display: grid;
+    text-decoration: none;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    padding: 0.4rem 0.8rem;
+    border: 0.2rem solid var(--color-primary);
+}
+
+.popular-coin-card-section {
+    text-align: left;
+    padding: 0.4rem;
+    height: 100%;
+    width: 100%;
+}
+
+.popular-coin-card-section, .popular-coin-card-section .popular-popular-coin-details{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0.8rem;
+}
+
+.popular-coin-card .coin-logo-container {
+    width: 100%;
+    align-self: center;
+}
+
+.popular-coin-card .popular-coin-meta {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    column-gap: 0.4rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.coin-history {
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+}
+
+.coin-sparkline {
+    width: 100%;
+    height: 2.4rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+
+@media (max-width: 480px) {
+    .popular-coin-card-section:not(:last-child) {
+        border-right: 0.2em solid var(--color-primary);
+    }
+}
+@media (min-width: 768px) {
+    .popular-coin-card-section {
+        padding: 0.8rem;
+        border: none;
+        border-bottom: 0.2rem solid var(--color-primary);
+    }
+    
+    .popular-coin-card-section:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #coin-card-1 .popular-coin-card-section, #coin-card-2 .popular-coin-card-section, #coin-card-3 .popular-coin-card-section {
+        border: none;
+    }
+    .popular-coin-card {
+        grid-template-columns: 12rem 1fr 12rem;
+    }
+    #coin-card-1 .popular-coin-data, 
+    #coin-card-2 .popular-coin-data, 
+    #coin-card-3 .popular-coin-data {
+        text-align: center;
+    }
+    .coin-sparkline {
+        height: 3.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .popular-coin-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .popular-coin-card:hover .coin-logo {
+        scale: 1.5;
+     }
+
+    .popular-coin-card:hover .coin-sparkline {
+        background-color: var(--color-base);
+    }
+    .coin-sparkline {
+        height: 4rem;
+    }
+    
+}
+
