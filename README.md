@@ -99,7 +99,9 @@ I am highly proficient in web/app developement using Python, Javascript, HTML, C
 <img width="1366" height="768" alt="kreepr-5-dark" src="https://github.com/user-attachments/assets/6747f1b4-c5fc-4abf-8934-062336d1c2ca" />
 <img width="1366" height="768" alt="kreepr-6-light" src="https://github.com/user-attachments/assets/32f24f2c-e2d5-4e29-a2ff-c8611ef4b0e6" />
 <img width="1366" height="768" alt="kreepr-6-dark" src="https://github.com/user-attachments/assets/ccc9c14c-c48a-465a-8a17-1a6038f52d16" />
+
 ![kreepr-mobile-5-light](https://github.com/user-attachments/assets/e3fdbce4-e5db-4461-ad2a-61d72eb0783f)
+
 ![kreepr-mobile-5-dark](https://github.com/user-attachments/assets/a4be6357-5344-48c8-ad82-7053390a258d)
 ![kreepr-mobile-4-light](https://github.com/user-attachments/assets/7978ade9-60e1-496c-ab2b-486b14c5fe91)
 ![kreepr-mobile-4-dark](https://github.com/user-attachments/assets/58e04cf4-1186-4e4a-a7e0-54b2dc7b7e80)
