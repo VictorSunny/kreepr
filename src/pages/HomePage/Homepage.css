@@ -41,7 +41,7 @@
         grid-column: span 2;
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding-inline: 2.4rem;
     }
 
