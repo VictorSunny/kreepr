@@ -16,6 +16,10 @@
     white-space: nowrap;
 }
 
+.popular-coin-card > * {
+    min-width: 100%;
+}
+
 .popular-coin-meta > * {
     white-space: nowrap;
     overflow: hidden;
