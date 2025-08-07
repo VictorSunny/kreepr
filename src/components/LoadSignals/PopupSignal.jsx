@@ -14,6 +14,8 @@ function PopupSignal({ popupType, popupMessageContinuousVerb }) {
 
     ////    POPUP MODAL TO SIGNAL USER ON REQUEST RESPONSE.
 
+    // *not yet in use* //
+
     // takes a 'popuptype' parameter to display matching popup element
 
     // popupmessagecontinuous verb to take message in the form of a continuous verb that can be used in any context

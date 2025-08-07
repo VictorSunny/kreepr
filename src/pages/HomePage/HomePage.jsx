@@ -5,7 +5,7 @@ import { useSiteNavigationContext } from "../../contexts/SiteNavigationContext"
 import HeroSlider from "../../components/HeroSlider/HeroSlider";
 import PopularCoinCard from "./PopularCoinCard";
 import GoToPageButton from "../../components/GoToPageButton/GoToPageButton";
-import './Homepage.css'
+import './HomePage.css'
 
 import fetchTrendingCoins from "../../services/fetchTrendingCoins";
 
