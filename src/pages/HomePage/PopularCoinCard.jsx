@@ -55,7 +55,7 @@ export default function PopularCoinCard({coin, id, index}) {
                         #{coinMarketCapRank}
                     </div>
                     <div className="coin-symbol">
-                        {CoinTickerSymbol}
+                        {CoinTickerSymbol}fnjfnjnd
                     </div>
                     <div className="coin-name">
                         {coinName}

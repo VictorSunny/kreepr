@@ -9,7 +9,7 @@
 .popular-coin-card {
     display: grid;
     text-decoration: none;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
     padding: 0.4rem 0.8rem;
     border: 0.2rem solid var(--color-primary);
     text-overflow: ellipsis;
