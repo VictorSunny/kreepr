@@ -6,7 +6,7 @@ import { fetchCoinChartData } from '../../../services/fetchCoinData'
 import { useState } from 'react'
 import { useThemeContext } from '../../../contexts/ThemeContext'
 import HistoryTimeframeDropdown from '../HistoryTimeframeDropdown'
-import './LineChartWrapper.css'
+import './lineChartWrapper.css'
 import { useApiQueryContext } from '../../../contexts/ApiQueryContext'
 import NoDataSignal from '../../../components/LoadSignals/NoDataSignal'
 
