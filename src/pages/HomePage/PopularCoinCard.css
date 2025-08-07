@@ -20,7 +20,7 @@
     overflow: hidden;
 }
 
-.popular-coin-card .coin-name {
+.popular-popular-coin-details > * {
     text-overflow: ellipsis;
     overflow: hidden;
 }
