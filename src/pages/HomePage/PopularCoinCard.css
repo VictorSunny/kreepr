@@ -13,6 +13,7 @@
     padding: 0.4rem 0.8rem;
     border: 0.2rem solid var(--color-primary);
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .popular-coin-meta > * {
