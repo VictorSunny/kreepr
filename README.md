@@ -100,21 +100,21 @@ I am highly proficient in web/app developement using Python, Javascript, HTML, C
 <img width="1366" height="768" alt="kreepr-6-light" src="https://github.com/user-attachments/assets/32f24f2c-e2d5-4e29-a2ff-c8611ef4b0e6" />
 <img width="1366" height="768" alt="kreepr-6-dark" src="https://github.com/user-attachments/assets/ccc9c14c-c48a-465a-8a17-1a6038f52d16" />
 
-![kreepr-mobile-5-light](https://github.com/user-attachments/assets/e3fdbce4-e5db-4461-ad2a-61d72eb0783f)
+![kreepr-mobile-1-light](https://github.com/user-attachments/assets/230c9133-3d49-4c3a-916d-aa500c025d46)
+![kreepr-mobile-1-dark](https://github.com/user-attachments/assets/ea7c7264-b3df-4358-8365-eba4572ca770)
+![kreepr-mobile-2-light](https://github.com/user-attachments/assets/7dc6e87f-543d-4497-910e-c3aac6d753a9)
+![kreepr-mobile-2-scrolled-light](https://github.com/user-attachments/assets/50260ee2-c9b8-47f2-b721-d4ac7000a0fc)
+![kreepr-mobile-2-dark](https://github.com/user-attachments/assets/0a184da7-d728-43bc-ba4c-2f49f7165264)
+![kreepr-mobile-2-scrolled-dark](https://github.com/user-attachments/assets/a81646a8-fc95-457c-baa7-efba47f2fd55)
+![kreepr-mobile-3-light](https://github.com/user-attachments/assets/f5b1434d-0a15-4edd-8033-9818dedaadca)
+![kreepr-mobile-3-dark](https://github.com/user-attachments/assets/4283bb07-24b8-4b44-b2d0-6ca5b5d0e05b)
+![kreepr-mobile-4-light](https://github.com/user-attachments/assets/31ddbe67-40d5-4062-8018-7a2bf339c94f)
+![kreepr-mobile-4-dark](https://github.com/user-attachments/assets/66086e16-4c8e-44a0-9755-b153a844647f)
+![kreepr-mobile-5-light](https://github.com/user-attachments/assets/9b24c579-9bbd-4675-8cbe-7a22a574bc50)
+![kreepr-mobile-5-dark](https://github.com/user-attachments/assets/f8f74cb0-4f64-4b6f-85e7-bc1b61bf3dc3)
 
-![kreepr-mobile-5-dark](https://github.com/user-attachments/assets/a4be6357-5344-48c8-ad82-7053390a258d)
-![kreepr-mobile-4-light](https://github.com/user-attachments/assets/7978ade9-60e1-496c-ab2b-486b14c5fe91)
-![kreepr-mobile-4-dark](https://github.com/user-attachments/assets/58e04cf4-1186-4e4a-a7e0-54b2dc7b7e80)
-![kreepr-mobile-3-light](https://github.com/user-attachments/assets/9657d93f-67c8-4580-af04-3e892417dc09)
-![kreepr-mobile-3-dark](https://github.com/user-attachments/assets/5cbe9790-d9e8-437a-a4a1-4b848d4154fa)
-![kreepr-mobile-2-scrolled-light](https://github.com/user-attachments/assets/9df1c9cf-d2be-4cef-b26a-0aa3a70b54bd)
-![kreepr-mobile-2-scrolled-dark](https://github.com/user-attachments/assets/d286ea19-5ec6-4dd2-9bdf-2fbdf3876fbb)
-![kreepr-mobile-2-light](https://github.com/user-attachments/assets/c7dcc23f-5df6-474c-938c-f1b559ccd17f)
-![kreepr-mobile-2-dark](https://github.com/user-attachments/assets/8bd33e45-4faf-466b-be73-ebd186cbacc8)
-![kreepr-mobile-1-light](https://github.com/user-attachments/assets/12a1f2b1-deb3-407b-8f22-d741d004a1f7)
-![kreepr-mobile-1-dark](https://github.com/user-attachments/assets/2060c4a9-8545-4ac2-b163-dca9f2f5b3a5)
-<img width="1366" height="768" alt="kreepr-home-performance" src="https://github.com/user-attachments/assets/96cbd8c8-a78e-4ca6-915a-c7a75e9ec55f" />
-<img width="1366" height="768" alt="kreepr-coin-performance" src="https://github.com/user-attachments/assets/310680e2-07bc-4448-9ea5-d0965ad3c474" />
-<img width="1366" height="768" alt="kreepr-all-coins-performance" src="https://github.com/user-attachments/assets/97fa1a80-0cd2-49b7-bb40-366707391371" />
-<img width="1366" height="768" alt="kreepr-about-performance" src="https://github.com/user-attachments/assets/54d98bf9-b882-4893-9780-ace5bc22bb5f" />
+<img width="1366" height="768" alt="kreepr-performance-home-page" src="https://github.com/user-attachments/assets/1b5af0c1-e332-4b0b-8ef5-8e8fd1f891ef" />
+<img width="1366" height="768" alt="kreepr-performance-coin-page" src="https://github.com/user-attachments/assets/94653a84-f4f7-404b-afae-00c4d94ce4ad" />
+<img width="1366" height="768" alt="kreepr-performance-all-coins-page" src="https://github.com/user-attachments/assets/57a914e4-f336-433d-81eb-8da6e89c9300" />
+<img width="1366" height="768" alt="kreepr-performance-about-page" src="https://github.com/user-attachments/assets/5de454b1-ce10-4625-9217-fe79ddbf13c8" />
 
