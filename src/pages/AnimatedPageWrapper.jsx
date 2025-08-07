@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom'
 
 function AnimatedPageWrapper({ children }) {
 
+    //// WRAPPER TO ANIMATE PAGES ON NAVIGATION
+
     const location = useLocation()
 
     return (
