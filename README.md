@@ -100,18 +100,18 @@ I am highly proficient in web/app developement using Python, Javascript, HTML, C
 <img width="1366" height="768" alt="kreepr-6-light" src="https://github.com/user-attachments/assets/32f24f2c-e2d5-4e29-a2ff-c8611ef4b0e6" />
 <img width="1366" height="768" alt="kreepr-6-dark" src="https://github.com/user-attachments/assets/ccc9c14c-c48a-465a-8a17-1a6038f52d16" />
 
-![kreepr-mobile-2-light](https://github.com/user-attachments/assets/7dc6e87f-543d-4497-910e-c3aac6d753a9)
-![kreepr-mobile-2-dark](https://github.com/user-attachments/assets/0a184da7-d728-43bc-ba4c-2f49f7165264)
 ![kreepr-mobile-1-light](https://github.com/user-attachments/assets/230c9133-3d49-4c3a-916d-aa500c025d46)
 ![kreepr-mobile-1-dark](https://github.com/user-attachments/assets/ea7c7264-b3df-4358-8365-eba4572ca770)
-![kreepr-mobile-5-light](https://github.com/user-attachments/assets/9b24c579-9bbd-4675-8cbe-7a22a574bc50)
-![kreepr-mobile-5-dark](https://github.com/user-attachments/assets/f8f74cb0-4f64-4b6f-85e7-bc1b61bf3dc3)
-![kreepr-mobile-4-light](https://github.com/user-attachments/assets/31ddbe67-40d5-4062-8018-7a2bf339c94f)
-![kreepr-mobile-4-dark](https://github.com/user-attachments/assets/66086e16-4c8e-44a0-9755-b153a844647f)
+![kreepr-mobile-2-light](https://github.com/user-attachments/assets/7dc6e87f-543d-4497-910e-c3aac6d753a9)
+![kreepr-mobile-2-scrolled-light](https://github.com/user-attachments/assets/50260ee2-c9b8-47f2-b721-d4ac7000a0fc)
+![kreepr-mobile-2-dark](https://github.com/user-attachments/assets/0a184da7-d728-43bc-ba4c-2f49f7165264)
+![kreepr-mobile-2-scrolled-dark](https://github.com/user-attachments/assets/a81646a8-fc95-457c-baa7-efba47f2fd55)
 ![kreepr-mobile-3-light](https://github.com/user-attachments/assets/f5b1434d-0a15-4edd-8033-9818dedaadca)
 ![kreepr-mobile-3-dark](https://github.com/user-attachments/assets/4283bb07-24b8-4b44-b2d0-6ca5b5d0e05b)
-![kreepr-mobile-2-scrolled-light](https://github.com/user-attachments/assets/50260ee2-c9b8-47f2-b721-d4ac7000a0fc)
-![kreepr-mobile-2-scrolled-dark](https://github.com/user-attachments/assets/a81646a8-fc95-457c-baa7-efba47f2fd55)
+![kreepr-mobile-4-light](https://github.com/user-attachments/assets/31ddbe67-40d5-4062-8018-7a2bf339c94f)
+![kreepr-mobile-4-dark](https://github.com/user-attachments/assets/66086e16-4c8e-44a0-9755-b153a844647f)
+![kreepr-mobile-5-light](https://github.com/user-attachments/assets/9b24c579-9bbd-4675-8cbe-7a22a574bc50)
+![kreepr-mobile-5-dark](https://github.com/user-attachments/assets/f8f74cb0-4f64-4b6f-85e7-bc1b61bf3dc3)
 
 <img width="1366" height="768" alt="kreepr-performance-home-page" src="https://github.com/user-attachments/assets/1b5af0c1-e332-4b0b-8ef5-8e8fd1f891ef" />
 <img width="1366" height="768" alt="kreepr-performance-coin-page" src="https://github.com/user-attachments/assets/94653a84-f4f7-404b-afae-00c4d94ce4ad" />
