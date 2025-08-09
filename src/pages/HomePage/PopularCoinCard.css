@@ -9,7 +9,7 @@
 .popular-coin-card {
     display: grid;
     text-decoration: none;
-    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr 0.8fr;
     padding: 0.4rem 0.8rem;
     border: 0.2rem solid var(--color-primary);
     text-overflow: ellipsis;
@@ -17,7 +17,7 @@
 }
 
 .popular-coin-card > * {
-    min-wnpmidth: 100%;
+    min-width: 100%;
 }
 
 .popular-coin-meta > * {
@@ -25,7 +25,7 @@
     overflow: hidden;
 }
 
-.popular-popular-coin-details > * {
+.coin-detailss > * {
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@
     width: 100%;
 }
 
-.popular-coin-card-section, .popular-coin-card-section .popular-popular-coin-details{
+.popular-coin-card-section, .popular-coin-card-section .coin-detailss{
     display: flex;
     flex-direction: column;
     padding: 0.4rem 0.8rem;

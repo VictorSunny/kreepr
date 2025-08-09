@@ -1,4 +1,5 @@
 import {useState, useEffect } from 'react'
+import useResetStates from '../../../hooks/useResetStates'
 import SearchIcon from '../../../assets/icons/search-icon.svg?react'
 import CloseIcon from '../../../assets/icons/close-icon.svg?react'
 import SearchBar from './SearchBar'
@@ -10,6 +11,8 @@ function SearchButton() {
 
     // set variables to monitor if search dialogue is engaged
     const [searchEngaged, setSearchEngaged] = useState(false)
+
+    const _resetStatesLog = useResetStates([setSearchEngaged])
 
     // function that toggles searchengaged state - true/false
     const triggerSearchDialogue = () => {

@@ -111,7 +111,7 @@ function CoinMeta({coin}) {
                 <img src={coinSmallThumbnail} className="coin-logo" loading="lazy" alt="coin logo"></img>
                 {/* <img src="/css-icon.svg" className="coin-logo"></img> */}
             </div>
-            <div className="popular-coin-details">
+            <div className="coin-details">
                 <div className="coin-rank">
                     #{coinMarketCapRank}
                 </div>
@@ -119,7 +119,7 @@ function CoinMeta({coin}) {
                     {String(CoinTickerSymbol).toUpperCase()}
                 </div>
                 <div className="coin-name">
-                    {coinName}
+                    dnjdjdnjnd{coinName}
                 </div>
             </div>
         </div>

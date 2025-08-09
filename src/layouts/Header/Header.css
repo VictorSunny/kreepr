@@ -50,8 +50,8 @@ header .site-logo-link {
 
 @media (max-width: 480px) {
     .header-hamburger-btn, .close-sidebar-btn, .theme-toggle-btn, .search-btn, .close-sidebar-btn {
-        height: 2.4rem;
-        width: 2.4rem;
+        height: 2rem;
+        width: 2rem;
     }
 }
 

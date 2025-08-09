@@ -29,10 +29,23 @@
 
 #all-coins-table tbody th {
     max-width: 16rem;
+    overflow: hidden;
     white-space: nowrap;
+    
+}
+
+.coin-meta {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#all-coins-table .coin-meta .coin-details > * {
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: wrap;
 }
+
 
 #all-coins-table thead, #coin-header {
     position: sticky;

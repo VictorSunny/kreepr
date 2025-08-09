@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, lazy } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
+import useResetStates from '../../../hooks/useResetStates'
 
 import Backdrop from '../../../components/Backdrop/Backdrop'
 import NoDataSignal from '../../../components/LoadSignals/NoDataSignal'
@@ -30,6 +31,7 @@ export default function SearchBar({mobileTriggered}) {
     const [userHasTyped, setUserHasTyped] = useState(true)
     const [searchClicked, setSearchClicked] = useState(false)
 
+    const _stateResetLog = useResetStates([setSearchEngaged, setUserIsTyping, setSearchClicked])
     
     const searchBarInput = useRef()
 

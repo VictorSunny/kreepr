@@ -6,6 +6,7 @@
     padding: 0.8rem;
     text-align: left;
     color: var(--color-medium-text);
+    z-index: inherit;
 }
 
 .searched-coin > * {
