@@ -90,7 +90,6 @@ header .site-logo-link {
     gap: 0.8rem;
     align-items: center;
     width: 100%;
-    font-size: 0;
   }
   header::after {
     grid-column: span 6;

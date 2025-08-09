@@ -152,8 +152,7 @@ function SearchedCoin({ coinInfo }) {
         {/* <img src="/css-icon.svg" className="searched-thumb"></img> */}
       </div>
       <div className="searched-coin-meta">
-        <span className="searched-symbol">{coinInfo.symbol}</span>{' '}
-        <span className="searched-name">{coinInfo.name}</span>
+        <span className="searched-symbol">{coinInfo.symbol}</span> - <span className="searched-name">{coinInfo.name}</span>
       </div>
     </Link>
   );

@@ -1,15 +1,27 @@
 .searched-coin {
   display: grid;
-  grid-template-columns: 2rem 1fr;
+  grid-template-columns: 4rem 1fr;
+  width: 100%;
+  height: 100%;
   gap: 0.8rem;
-  padding: 0.8rem;
   text-align: left;
   color: var(--color-medium-text);
   z-index: inherit;
+  cursor: pointer;
+  min-height: 4rem;
+  gap: 0.4rem;
 }
 
 .searched-coin > * {
+  cursor: pointer;
   align-self: center;
+  padding: 0.4rem 0.8rem;
+}
+
+.searched-coin .searched-thumb {
+  margin: auto;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .searched-coin:not(:last-child) {
@@ -39,7 +51,7 @@
 }
 
 .show-search-popup,
-.search-popup:active {
+.search-popup:hover {
   display: block;
 }
 
