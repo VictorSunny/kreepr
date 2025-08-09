@@ -21,6 +21,15 @@ ul {
   cursor: default;
   scroll-behavior: smooth;
 }
+@media (min-width: 992px) {
+  *:-moz-any(*) {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-base);
+  }
+  #all-coins-table {
+    scrollbar-width: none;
+  }
+}
 
 *::selection {
   background-color: var(--color-primary);
@@ -30,7 +39,7 @@ ul {
 *::-webkit-scrollbar {
   display: none;
   background-color: var(--color-base);
-  width: 0.4rem;
+  width: 0.4rem !important;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -241,5 +250,6 @@ a {
   }
   .no-scroll {
     padding-right: 0.4rem;
+    background-color: var(--color-primary);
   }
 }
