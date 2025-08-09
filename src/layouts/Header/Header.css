@@ -1,58 +1,70 @@
-
 header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    row-gap: 0.4rem;
-    padding: 0.4rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  row-gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
 }
 
 header .site-logo-link {
-    height: 4rem;
-    place-self: center;
+  height: 4rem;
+  place-self: center;
 }
 
-.header-hamburger-btn, .close-sidebar-btn, .search-btn, .theme-toggle-btn {
-    position: fixed;
-    top: 1.6rem;
-    padding: 0.8rem;
-    box-sizing: content-box;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0rem 0rem 0.8rem rgba(100, 100, 100, 0.4);
-    background-color: var(--color-base);
-    z-index: 8;
+.header-hamburger-btn,
+.close-sidebar-btn,
+.search-btn,
+.theme-toggle-btn {
+  position: fixed;
+  top: 1.6rem;
+  padding: 0.8rem;
+  box-sizing: content-box;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 0.8rem rgba(100, 100, 100, 0.4);
+  background-color: var(--color-base);
+  z-index: 8;
 }
 
-.header-hamburger-btn, .close-sidebar-btn {
-    right: 0.8rem;
+.header-hamburger-btn,
+.close-sidebar-btn {
+  right: 0.8rem;
 }
 
-.search-btn, .theme-toggle-btn {
-    left: 0.8rem;
+.search-btn,
+.theme-toggle-btn {
+  left: 0.8rem;
 }
 
 .mobile-navbar {
-    margin-top: 2.4rem;
+  margin-top: 2.4rem;
 }
 
 .search-btn {
-    position: absolute;
+  position: absolute;
 }
 
-.header-hamburger-btn, .close-sidebar-btn, .theme-toggle-btn, .search-btn, .close-sidebar-btn {
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: var(--color-base);
-    fill: var(--color-primary);
+.header-hamburger-btn,
+.close-sidebar-btn,
+.theme-toggle-btn,
+.search-btn,
+.close-sidebar-btn {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: var(--color-base);
+  fill: var(--color-primary);
 }
 
 @media (max-width: 480px) {
-    .header-hamburger-btn, .close-sidebar-btn, .theme-toggle-btn, .search-btn, .close-sidebar-btn {
-        height: 2rem;
-        width: 2rem;
-    }
+  .header-hamburger-btn,
+  .close-sidebar-btn,
+  .theme-toggle-btn,
+  .search-btn,
+  .close-sidebar-btn {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 .dark .header-hamburger-btn,
@@ -60,106 +72,103 @@ header .site-logo-link {
 .dark .theme-toggle-btn,
 .dark .search-btn,
 .dark .close-sidebar-btn {
-    background-color: var(--color-primary);
-    fill: var(--color-white);
+  background-color: var(--color-primary);
+  fill: var(--color-white);
 }
 
 @media (max-width: 480px) {
-    header .site-logo-link {
-        margin-block: 0.8rem;
-    }
+  header .site-logo-link {
+    margin-block: 0.8rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    header {
-        display: grid;
-        grid-template-areas: 
-        'logo navbar navbar navbar navbar theme-btn'
-        'logo search-bar search-bar search-bar search-bar theme-btn'
-        ;
-        gap: 0.8rem;
-        align-items: center;
-        width: 100%;
-        font-size: 0;
-    }
-    header::after {
-        grid-column: span 6;
-    }
-    header .site-logo-link {
-        grid-area: logo;
-        place-self: center;
-    }
-    #search-bar-container {
-        grid-area: search-bar;
-    }
-    #larger-navbar {
-        grid-area: navbar;
-    }
-    .theme-toggle-btn {
-        grid-area: theme-btn;
-        position: static;
-        place-self: end;
-    }
-
+  header {
+    display: grid;
+    grid-template-areas:
+      'logo navbar navbar navbar navbar theme-btn'
+      'logo search-bar search-bar search-bar search-bar theme-btn';
+    gap: 0.8rem;
+    align-items: center;
+    width: 100%;
+    font-size: 0;
+  }
+  header::after {
+    grid-column: span 6;
+  }
+  header .site-logo-link {
+    grid-area: logo;
+    place-self: center;
+  }
+  #search-bar-container {
+    grid-area: search-bar;
+  }
+  #larger-navbar {
+    grid-area: navbar;
+  }
+  .theme-toggle-btn {
+    grid-area: theme-btn;
+    position: static;
+    place-self: end;
+  }
 }
 @media (min-width: 992px) {
-    header {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 1.6rem;
-        padding: 0.4rem 0.8rem;
-    }
-    
-    header > * {
-        align-self: center;
-    }
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.6rem;
+    padding: 0.4rem 0.8rem;
+  }
 
-    header .site-logo-link {
-        grid-column: span 2;
-        place-self: start;
-    }
-    #search-bar-container {
-        grid-column: span 5;
-    }
-    #larger-navbar {
-        grid-column: span 4;
-    }
-    .theme-toggle-btn {
-        position: static;
-        grid-column: span 1;
-        width: 1.6rem;
-        justify-self: center;
-    }
+  header > * {
+    align-self: center;
+  }
 
-    header::after {
-        grid-column: span 12;
-    }
+  header .site-logo-link {
+    grid-column: span 2;
+    place-self: start;
+  }
+  #search-bar-container {
+    grid-column: span 5;
+  }
+  #larger-navbar {
+    grid-column: span 4;
+  }
+  .theme-toggle-btn {
+    position: static;
+    grid-column: span 1;
+    width: 1.6rem;
+    justify-self: center;
+  }
+
+  header::after {
+    grid-column: span 12;
+  }
 }
 
-
 .primary-sidebar {
-    background-color: var(--color-base);
-    z-index: 8;
+  background-color: var(--color-base);
+  z-index: 8;
 }
 
 header::after {
-    content: '';
-    display: flex;
-    height: 0.2rem;
-    scale: 0;
-    width: 100%;
-    background-color: var(--color-primary);
-    margin-top: 0.8rem;
-    align-self: center;
-    place-self: center;
-    border-radius: 0.4rem;
-    opacity: 0;
-    animation: stretchLine 1.6s ease-in-out forwards;
+  content: '';
+  display: flex;
+  height: 0.2rem;
+  scale: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  margin-top: 0.8rem;
+  align-self: center;
+  place-self: center;
+  border-radius: 0.4rem;
+  opacity: 0;
+  animation: stretchLine 1.6s ease-in-out forwards;
 }
 
 @keyframes stretchLine {
-    to {
-        scale: 1;
-        opacity: 1;
-    }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }

@@ -1,47 +1,41 @@
-import { createContext, useContext, useState} from "react";
+import { createContext, useContext, useState } from 'react';
 
-export const siteNavigationContext = createContext(null)
+export const siteNavigationContext = createContext(null);
 
 export const useSiteNavigationContext = () => useContext(siteNavigationContext);
 
-export const SiteNavigationProvider = ({children}) => {
-    
-    //// CONTEXT PROVIDER FOR SITE NAVIGATIONS
+export const SiteNavigationProvider = ({ children }) => {
+  //// CONTEXT PROVIDER FOR SITE NAVIGATIONS
 
-    const urlObj = {value: '', text: 'Home'}
+  const urlObj = { value: '', text: 'Home' };
 
-    // all websites pages that can be visited independently
-    const allUrls = [
-        {value: '', text: 'Home'},
-        {value: 'all-coins', text: 'All Coins'},
-        {value: 'about', text: 'About'},
-    ]
+  // all websites pages that can be visited independently
+  const allUrls = [
+    { value: '', text: 'Home' },
+    { value: 'all-coins', text: 'All Coins' },
+    { value: 'about', text: 'About' },
+  ];
 
-    // set default values for site navigations
-    const [currentUrlPath, setCurrentUrlPath] = useState({})
-    const [breadcrumbUrlPaths, setBreadCrumbUrlPaths] = useState([urlObj,])
+  // set default values for site navigations
+  const [currentUrlPath, setCurrentUrlPath] = useState({});
+  const [breadcrumbUrlPaths, setBreadCrumbUrlPaths] = useState([urlObj]);
 
-    // functions for changing site navigation values
-    const changeCurrentUrlPath = (urlPathObject) => {
-        setCurrentUrlPath(urlPathObject);
-    }
-    const changeBreadcrumbUrlPaths = (breadcrumbUrlPathsList) => {
-        setBreadCrumbUrlPaths(breadcrumbUrlPathsList);
-    }
+  // functions for changing site navigation values
+  const changeCurrentUrlPath = (urlPathObject) => {
+    setCurrentUrlPath(urlPathObject);
+  };
+  const changeBreadcrumbUrlPaths = (breadcrumbUrlPathsList) => {
+    setBreadCrumbUrlPaths(breadcrumbUrlPathsList);
+  };
 
-    // package all values and functions for export
-    const values = {
-        allUrls,
-        currentUrlPath,
-        breadcrumbUrlPaths,
-        changeCurrentUrlPath,
-        changeBreadcrumbUrlPaths,
-    }
+  // package all values and functions for export
+  const values = {
+    allUrls,
+    currentUrlPath,
+    breadcrumbUrlPaths,
+    changeCurrentUrlPath,
+    changeBreadcrumbUrlPaths,
+  };
 
-    return (
-        <siteNavigationContext.Provider value={values}>
-            {children}
-        </siteNavigationContext.Provider>
-    )
-
-}
+  return <siteNavigationContext.Provider value={values}>{children}</siteNavigationContext.Provider>;
+};

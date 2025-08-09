@@ -2,242 +2,244 @@
 @import url('./Themes.css');
 
 html {
-   scroll-behavior: smooth;
-   scroll-snap-type: y mandatory;
-   overflow-y: scroll;
-   overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-ol, ul {
-   list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   user-select: none;
-   cursor:default;
-   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  scroll-behavior: smooth;
 }
 
 *::selection {
-   background-color: var(--color-primary);
-   color: var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
-
-
 *::-webkit-scrollbar {
-   display: none;
-   background-color: var(--color-base);
-   width: 0.4rem;
+  display: none;
+  background-color: var(--color-base);
+  width: 0.4rem;
 }
 
 *::-webkit-scrollbar-thumb {
-   background-color: var(--color-primary);
-   width: 100%;
-   border-radius: 0.4rem;
+  background-color: var(--color-primary);
+  width: 100%;
+  border-radius: 0.4rem;
 }
 @media (min-width: 992px) {
-   *::-webkit-scrollbar {
-      display: initial;
-   }
+  *::-webkit-scrollbar {
+    display: initial;
+  }
 }
 
 main {
-   min-height: 80vh;
+  min-height: 80vh;
 }
 
 .page-container {
-   padding-inline: 1.6rem;
+  padding-inline: 1.6rem;
 }
 @media (min-width: 768px) {
-   .page-container {
-      padding-inline: 2.4rem;
-   }
+  .page-container {
+    padding-inline: 2.4rem;
+  }
 }
 @media (min-width: 1200px) {
-   .page-container {
-      padding-inline: 4.8rem;
-   }
+  .page-container {
+    padding-inline: 4.8rem;
+  }
 }
 @media (min-width: 1440px) {
-   .page-container {
-      padding-inline: 9.6rem;
-   }
+  .page-container {
+    padding-inline: 9.6rem;
+  }
 }
 @media (min-width: 2560px) {
-   .home-page-container, .coin-page-container {
-      padding-inline: 25%;
-   }
+  .home-page-container,
+  .coin-page-container {
+    padding-inline: 25%;
+  }
 }
 
 #app-container {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-container > .btn {
-   place-self: center;
+  place-self: center;
 }
 
 .sticky-intro {
-   position: sticky;
-   display: flex;
-   justify-content: center;
-   place-self: center;
-   top: 0;
-   width: 100vw;
-   z-index: 7; 
-   overflow: hidden;
-   background-color: var(--color-base);
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  place-self: center;
+  top: 0;
+  width: 100vw;
+  z-index: 7;
+  overflow: hidden;
+  background-color: var(--color-base);
 }
 
 .noselect {
-   user-select: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .primary-section {
-padding-inline: 1.6rem;
+  padding-inline: 1.6rem;
 }
 
-p, span {
-   user-select:text;
+p,
+span {
+  user-select: text;
 }
 
-*:active, *:focus {
-   -webkit-tap-highlight-color: transparent
+*:active,
+*:focus {
+  -webkit-tap-highlight-color: transparent;
 }
 
 hr {
-   border: none;
-   height: 0.1rem;
-   background-color: var(--color-primary);
+  border: none;
+  height: 0.1rem;
+  background-color: var(--color-primary);
 }
 
 img {
-   white-space: wrap;
+  white-space: wrap;
 }
 
-button, a {
-   cursor: pointer;
+button,
+a {
+  cursor: pointer;
 }
 
 .no-scroll {
-   overflow-y: hidden !important;
-   max-height: 100vh !important;
+  overflow-y: hidden !important;
+  max-height: 100vh !important;
 }
 
 .loading {
-   cursor: progress !important;
-   color: var(--color-disabled) !important;
-   border-color: var(--color-disabled) !important;
-   background-color: var(--color-base-complimentary) !important;
-   box-shadow: none !important;
+  cursor: progress !important;
+  color: var(--color-disabled) !important;
+  border-color: var(--color-disabled) !important;
+  background-color: var(--color-base-complimentary) !important;
+  box-shadow: none !important;
 }
 
 .btn {
-   height: max-content;
-   min-width: 1.6rem;
-   max-width: max-content;
-   padding: 0.8em;
-   border-radius: 0.4em;
-   border: 0.2em solid var(--color-base);
-   display: flex;
-   justify-content: space-between;
-   align-content: center;
-   place-items: center;
-   text-align: center;
-   text-transform: capitalize;
-   background-color: var(--color-primary);
-   fill: var(--color-white);
-   color: var(--color-white);
-   cursor: pointer;
-   box-shadow: inset -0.4em -0.4em 0.4em hsla(26, 41%, 20%, 0.4);
-   transition: 0.2s;
+  height: max-content;
+  min-width: 1.6rem;
+  max-width: max-content;
+  padding: 0.8em;
+  border-radius: 0.4em;
+  border: 0.2em solid var(--color-base);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  place-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--color-primary);
+  fill: var(--color-white);
+  color: var(--color-white);
+  cursor: pointer;
+  box-shadow: inset -0.4em -0.4em 0.4em hsla(26, 41%, 20%, 0.4);
+  transition: 0.2s;
 }
 
-.btn::before, .btn::after {
-   align-self: center;
-   place-self: center;
-   align-content: center;
-   vertical-align: middle;
+.btn::before,
+.btn::after {
+  align-self: center;
+  place-self: center;
+  align-content: center;
+  vertical-align: middle;
 }
 
 .btn:active {
-   background-color: var(--color-base-complimentary);
-   border-color: var(--color-primary);
-   fill: var(--color-primary);
-   color: var(--color-primary);
-   scale: 0.95;
+  background-color: var(--color-base-complimentary);
+  border-color: var(--color-primary);
+  fill: var(--color-primary);
+  color: var(--color-primary);
+  scale: 0.95;
 }
 
 .btn-icon {
-   height: 100%;
-   width: 1.6em;
-   margin-inline: 0.4em;
+  height: 100%;
+  width: 1.6em;
+  margin-inline: 0.4em;
 }
 
-
 .page-nav-btn {
-   margin-block: 2.4rem;
-   justify-self: center;
-   font-size: 1.1rem ;
-   margin-inline: auto;
+  margin-block: 2.4rem;
+  justify-self: center;
+  font-size: 1.1rem;
+  margin-inline: auto;
 }
 
 .link-btn {
-   color: var(--color-large-text);
-   text-decoration: underline;
-   text-decoration-color: var(--color-primary);
-   text-decoration-thickness: 0.2em;
-   text-transform: capitalize;
-   line-height: 1.6em;
-   transition: 0.2s;
+  color: var(--color-large-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.2em;
+  text-transform: capitalize;
+  line-height: 1.6em;
+  transition: 0.2s;
 }
 
 .link-btn:active {
-   color: var(--color-primary);
-   letter-spacing: 0.1em;
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
 }
 
 .btn-a {
-   height: 100%;
-   width: 100%;
-   color: inherit;
-   text-align: center;
-   padding: 0.4em 0.8em;
-   place-items: center;
-   justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  text-align: center;
+  padding: 0.4em 0.8em;
+  place-items: center;
+  justify-content: space-between;
 }
 
 .page-container {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 992px) {
-
-   .btn:hover {
-      background-color: var(--color-base-complimentary);
-      border-color: var(--color-large-text);
-      fill: var(--color-large-text);
-      color: var(--color-large-text);
-   }
-   .dark .btn:hover {
-      background-color: var(--color-base-complimentary);
-      fill: var(--color-white);
-      color: var(--color-white);
-      box-shadow: none;
-   }
-   .link-btn:active {
-      color: var(--color-primary);
-      letter-spacing: 0.1em;
-   }
-   .no-scroll {
-      padding-right: 0.4rem;
-   }
+  .btn:hover {
+    background-color: var(--color-base-complimentary);
+    border-color: var(--color-large-text);
+    fill: var(--color-large-text);
+    color: var(--color-large-text);
+  }
+  .dark .btn:hover {
+    background-color: var(--color-base-complimentary);
+    fill: var(--color-white);
+    color: var(--color-white);
+    box-shadow: none;
+  }
+  .link-btn:active {
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+  }
+  .no-scroll {
+    padding-right: 0.4rem;
+  }
 }

@@ -1,38 +1,37 @@
-
 #all-coins-table {
-    -webkit-user-drag: auto;
-    margin-inline: 0.8rem;
+  -webkit-user-drag: auto;
+  margin-inline: 0.8rem;
 }
 
 .all-coins-page-container {
-    padding-inline: 0 !important;
+  padding-inline: 0 !important;
 }
 
 .coins-table-container {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .coins-table-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .sorter-util {
-    position: static;
-    margin-bottom: 4.8rem;
-    margin-right: 0.8rem;
+  position: static;
+  margin-bottom: 4.8rem;
+  margin-right: 0.8rem;
 }
 
 .all-coins-page-container .scroll-top-btn-container {
-    position: fixed;
-    top: 88%;
-    right: 3.2rem;
+  position: fixed;
+  top: 88%;
+  right: 3.2rem;
 }
 
 @media (min-width: 768px) {
-    .all-coins-page-container .scroll-top-btn-container {
-        top: 80%;
-    }
-    .all-coins-page-container .scroll-top-btn {
-        padding: 1.6rem;
-    }
+  .all-coins-page-container .scroll-top-btn-container {
+    top: 80%;
+  }
+  .all-coins-page-container .scroll-top-btn {
+    padding: 1.6rem;
+  }
 }

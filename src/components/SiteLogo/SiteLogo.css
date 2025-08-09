@@ -1,17 +1,16 @@
-
 .site-logo-link {
-    width: 10rem;
+  width: 10rem;
 }
 
 @media (min-width: 768px) {
-    .site-logo-link {
-        width:16rem;
-    }    
+  .site-logo-link {
+    width: 16rem;
+  }
 }
 
 .site-main-logo {
-    fill: var(--color-primary);
-    color: var(--color-primary);
-    height: 100%;
-    width: 100%;
+  fill: var(--color-primary);
+  color: var(--color-primary);
+  height: 100%;
+  width: 100%;
 }

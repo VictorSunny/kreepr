@@ -1,76 +1,76 @@
-
 .searched-coin {
-    display: grid;
-    grid-template-columns: 2rem 1fr;
-    gap: 0.8rem;
-    padding: 0.8rem;
-    text-align: left;
-    color: var(--color-medium-text);
-    z-index: inherit;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  text-align: left;
+  color: var(--color-medium-text);
+  z-index: inherit;
 }
 
 .searched-coin > * {
-    align-self: center;
+  align-self: center;
 }
 
 .searched-coin:not(:last-child) {
-    border-bottom: 0.2rem solid var(--color-primary);
+  border-bottom: 0.2rem solid var(--color-primary);
 }
 
 .search-popup {
-    row-gap: 0.8rem;
-    position: absolute;
-    margin-top: 0.4rem;
-    border-radius: 0.4rem;
-    box-shadow: 0 0.4rem 0.4rem var(--color-small-text);
-    border: 0.2rem solid var(--color-primary);
-    background-color: var(--color-base-complimentary);
-    color: var(--color-medium-text);
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-height: 32vh;
-    overflow-y: scroll;
-    z-index: 8;
-    display: none;
+  row-gap: 0.8rem;
+  position: absolute;
+  margin-top: 0.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 0.4rem var(--color-small-text);
+  border: 0.2rem solid var(--color-primary);
+  background-color: var(--color-base-complimentary);
+  color: var(--color-medium-text);
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 32vh;
+  overflow-y: scroll;
+  z-index: 8;
+  display: none;
 }
 
 .search-popup::-webkit-scrollbar-track {
-    background-color: var(--color-base-complimentary);
+  background-color: var(--color-base-complimentary);
 }
 
-.show-search-popup, .search-popup:active {
-    display: block
+.show-search-popup,
+.search-popup:active {
+  display: block;
 }
 
 .search-popup .signal-modal div {
-    gap: 0.4em;
-    font-size: 1em;
+  gap: 0.4em;
+  font-size: 1em;
 }
 
 .search-popup .signal-modal .btn {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .search-popup .signal-modal .signal-action-response-icon {
-    display: none;
+  display: none;
 }
 
 .search-popup-hint {
-    text-align: left;
-    padding: 1.6rem 2.4rem;
+  text-align: left;
+  padding: 1.6rem 2.4rem;
 }
 
 @media (min-width: 992px) {
-    .searched-coin:hover {
-        background-color: var(--color-primary);
-        color: var(--color-white);
-    }
-    .search-popup {
-        max-height: 32vh;
-    }
+  .searched-coin:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+  .search-popup {
+    max-height: 32vh;
+  }
 }
 
 #search-popup::-webkit-scrollbar {
-    display: none;
+  display: none;
 }

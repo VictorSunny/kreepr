@@ -1,14 +1,13 @@
-import './LoadSignals.css'
+import './LoadSignals.css';
 
-function NoDataSignal({expectedData}) {
-
+function NoDataSignal({ expectedData }) {
   return (
     <div className="no-data-signal signal-modal">
-        <div>
-            <span>No {expectedData} available</span>
-        </div>
+      <div>
+        <span>No {expectedData} available</span>
+      </div>
     </div>
-  )
+  );
 }
 
-export default NoDataSignal
+export default NoDataSignal;

@@ -1,86 +1,85 @@
-
-.header-hamburger-icon, .vertical-hamburger-icon {
-    width: 100%;
-    height: 100%;
-    border: none;
+.header-hamburger-icon,
+.vertical-hamburger-icon {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-
 .close-sidebar-btn {
-    animation: flipVertical 0.2s ease 0.15s 1 normal forwards;
+  animation: flipVertical 0.2s ease 0.15s 1 normal forwards;
 }
 
 .primary-sidebar {
-    position: fixed;
-    inset: 0 0 0 0;
-    overflow: auto;
-    opacity: 0;
-    overscroll-behavior: contain;
-    z-index: 9;
-    animation: slideInFromRight 0.15s ease 0s 1 normal forwards;
+  position: fixed;
+  inset: 0 0 0 0;
+  overflow: auto;
+  opacity: 0;
+  overscroll-behavior: contain;
+  z-index: 9;
+  animation: slideInFromRight 0.15s ease 0s 1 normal forwards;
 }
 
 .primary-sidebar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.primary-sidebar  * {
-    font-size: 1.4rem;
+.primary-sidebar * {
+  font-size: 1.4rem;
 }
-.primary-sidebar  > * {
-    text-align: right;
+.primary-sidebar > * {
+  text-align: right;
 }
 
 .primary-sidebar-utils-container {
-    position: relative;
+  position: relative;
 }
 
 .primary-sidebar-content-container {
-    margin-top: 6.4rem;
-    padding: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+  margin-top: 6.4rem;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .primary-sidebar-content-container .drop-list {
-    place-items: end;
-    width: 100%;
+  place-items: end;
+  width: 100%;
 }
 .primary-sidebar-content-container .drop-list > * {
-    width: 100%;
-    margin-bottom: 1.6rem;
+  width: 100%;
+  margin-bottom: 1.6rem;
 }
 
 .primary-sidebar .dropdown-container {
-    width: 50%;
-    place-self: end;
-    margin-left: auto;
+  width: 50%;
+  place-self: end;
+  margin-left: auto;
 }
 .primary-sidebar .dropdown-container button,
 .primary-sidebar .dropdown-container option,
 .primary-sidebar .dropdown-container .dropdown-options-container,
 .primary-sidebar .dropdown-container .dropdown-content {
-    min-width: 100%;
-    text-align: right;
+  min-width: 100%;
+  text-align: right;
 }
 
 .primary-sidebar .search-popup {
-    max-height: 48;
+  max-height: 48;
 }
 
 @keyframes flipVertical {
-    to {
-        transform: rotate(90deg);
-    }
+  to {
+    transform: rotate(90deg);
+  }
 }
 
 @keyframes slideInFromRight {
-    from {
-        transform: translateX(200%);
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

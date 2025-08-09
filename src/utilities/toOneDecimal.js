@@ -1,9 +1,7 @@
-
 const toOneDecimal = (number) => {
+  ////    RETURNS CLASS THAT TRIMS LONG TRAILING DECIMAL NUMBERS
 
-    ////    RETURNS CLASS THAT TRIMS LONG TRAILING DECIMAL NUMBERS
+  return Number(number).toFixed(1);
+};
 
-    return Number(number).toFixed(1)
-}
-
-export default toOneDecimal
+export default toOneDecimal;

@@ -1,54 +1,71 @@
 @font-face {
-    font-family: 'roboto';
-    src: url('../assets/fonts/roboto-regular.woff2') format('woff2'), url('../assets/fonts/roboto-regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
+  font-family: 'roboto';
+  src:
+    url('../assets/fonts/roboto-regular.woff2') format('woff2'),
+    url('../assets/fonts/roboto-regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'roboto-serif';
-    src: url('../assets/fonts/roboto-serif-regular.woff2') format('woff2'), url('../assets/fonts/roboto-serif-regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
+  font-family: 'roboto-serif';
+  src:
+    url('../assets/fonts/roboto-serif-regular.woff2') format('woff2'),
+    url('../assets/fonts/roboto-serif-regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 html {
-    font-size: clamp(10px, 2vw, 14px);
-    font-family: 'roboto', monospace;
+  font-size: clamp(10px, 2vw, 14px);
+  font-family: 'roboto', monospace;
 }
 
-h1, h2, h3, h4, h5, header, input, textarea, option, .title {
-    font-family: 'roboto-serif', 'Times New Roman', Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+input,
+textarea,
+option,
+.title {
+  font-family: 'roboto-serif', 'Times New Roman', Times, serif;
 }
 
-p, span {
-    word-break: break-word;
+p,
+span {
+  word-break: break-word;
 }
 
 header {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 main {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 #search-bar::placeholder {
-    font-family: 'roboto', monospace;
+  font-family: 'roboto', monospace;
 }
 
-.popular-coin-card, #all-coins-table {
-    font-size: 1rem;
+.popular-coin-card,
+#all-coins-table {
+  font-size: 1rem;
 }
-
 
 .coin-symbol {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
-.about-section .about-text, input, textarea, .about-page-container {
-    word-spacing: 0.4rem;
-    letter-spacing: 0.05rem;
-    line-height: 1.6rem;
+.about-section .about-text,
+input,
+textarea,
+.about-page-container {
+  word-spacing: 0.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.6rem;
 }

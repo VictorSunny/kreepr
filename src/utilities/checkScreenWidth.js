@@ -1,24 +1,23 @@
-
 function checkScreenWidth() {
-    const scales = {
-        MOBILE: 480,
-        TABLET: 768,
-        DESKTOP: 992,
-    }
+  const scales = {
+    MOBILE: 480,
+    TABLET: 768,
+    DESKTOP: 992,
+  };
 
-    const deviceWidth = screen.width
-    
-    const isMobile = deviceWidth <= scales.MOBILE
-    const isTablet = (deviceWidth > scales.MOBILE) && (deviceWidth < scales.DESKTOP )
-    const isDesktop = deviceWidth >= scales.DESKTOP
+  const deviceWidth = screen.width;
 
-    const values = {
-        isMobile: isMobile,
-        isTablet: isTablet,
-        isDesktop: isDesktop,
-    }
+  const isMobile = deviceWidth <= scales.MOBILE;
+  const isTablet = deviceWidth > scales.MOBILE && deviceWidth < scales.DESKTOP;
+  const isDesktop = deviceWidth >= scales.DESKTOP;
 
-    return values
+  const values = {
+    isMobile: isMobile,
+    isTablet: isTablet,
+    isDesktop: isDesktop,
+  };
+
+  return values;
 }
 
-export default checkScreenWidth
+export default checkScreenWidth;

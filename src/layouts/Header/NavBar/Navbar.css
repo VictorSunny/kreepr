@@ -1,14 +1,12 @@
-
 .mobile-navbar ul {
-    display: flex;
-    gap: 0.4rem;
-    place-items: start;
-    list-style-type: none;
-    max-width: 100%;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 0.4rem;
+  place-items: start;
+  list-style-type: none;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .mobile-navbar li:not(:last-child)::after {
-    content: "›";
+  content: '›';
 }
-

@@ -1,150 +1,147 @@
-
 footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0.8rem;
-    row-gap: 1.6rem;
-    padding-bottom: 2.4rem !important;
-    text-align: left;
-    padding: 0.4rem 0.8rem;
-    position: relative;
-    font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0.8rem;
+  row-gap: 1.6rem;
+  padding-bottom: 2.4rem !important;
+  text-align: left;
+  padding: 0.4rem 0.8rem;
+  position: relative;
+  font-size: 1rem;
 }
 
 @media (max-width: 480px) {
-    footer {
-        font-size: 1.1rem;
-    }
+  footer {
+    font-size: 1.1rem;
+  }
 }
 
 .footer-icon {
-    height: 2rem;
-    width: 2rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .footer-btn {
-    padding: 0 !important;
-    min-width: 50% !important;
-    font-size: inherit;
-    height: 4rem !important;
+  padding: 0 !important;
+  min-width: 50% !important;
+  font-size: inherit;
+  height: 4rem !important;
 }
 
 .footer-btn .contact-link {
-    display: flex;
-    gap: 1.6rem;
-    justify-content: space-between;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-between;
 }
 
 footer .site-logo-link {
-    grid-column: span 1;
-    grid-row: 1;
-    place-self: start;
+  grid-column: span 1;
+  grid-row: 1;
+  place-self: start;
 }
 
 .footer-link-row * {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.footer-links-container li  {
-    width: 100%;
-    justify-content: space-between;
-    margin-block: 0.4rem;
-    align-items: center;
+.footer-links-container li {
+  width: 100%;
+  justify-content: space-between;
+  margin-block: 0.4rem;
+  align-items: center;
 }
 
 .footer-text-link {
-    margin-block: 0.8rem;
+  margin-block: 0.8rem;
 }
 
 .footer-section {
-    padding-top: 0.4rem;
-    margin-bottom: 1.6rem;
-    height: 100%;
-    width: 100%;
+  padding-top: 0.4rem;
+  margin-bottom: 1.6rem;
+  height: 100%;
+  width: 100%;
 }
 .footer-section:not(:last-child) {
-    margin-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .footer-section-title {
-    margin-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .footer-links-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #footer-main-content {
-    height: max-content;
+  height: max-content;
 }
 
 #footer-copyright {
-    text-align: center;
-    font-family: 'roboto-serif', monospace;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    word-spacing: 0.4rem;
+  text-align: center;
+  font-family: 'roboto-serif', monospace;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.4rem;
 }
 
 footer .dropdown-container {
-    margin-block: 0.4rem;
-    place-content: start;
-    width: 50%;
-    height: 3.2rem;
+  margin-block: 0.4rem;
+  place-content: start;
+  width: 50%;
+  height: 3.2rem;
 }
 
 footer .dropdown-container .dropdown-content {
-    place-items: start;
+  place-items: start;
 }
 
 footer .dropdown-container .dropdown-content {
-    width: 100%;
+  width: 100%;
 }
 
 footer .dropdown-options-container {
-    width: 100%;
-    max-height: 20rem;
+  width: 100%;
+  max-height: 20rem;
 }
 footer .dropdown-content button {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 @media (min-width: 992px) {
+  #footer-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+  }
 
-    #footer-main-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 3fr;
-    }
+  .footer-section {
+    padding: 0.4rem;
+  }
 
-    .footer-section {
-        padding: 0.4rem;
-    }
+  .footer-btn {
+    min-width: 100% !important;
+  }
 
-    .footer-btn {
-        min-width: 100% !important;
-    }
+  .footer-section-title {
+    margin-bottom: 1.6em;
+  }
 
-    .footer-section-title {
-        margin-bottom: 1.6em;
-    }    
+  .footer-section:not(:last-child) {
+    border-right: 0.2rem solid var(--color-primary);
+  }
 
-    .footer-section:not(:last-child) {
-        border-right: 0.2rem solid var(--color-primary);
-    }
+  .footer-link-row button {
+    width: 100%;
+  }
 
-    .footer-link-row button {
-        width: 100%;
-    }
-    
-    footer .dropdown-container {
-        width: 100%;
-    }
-
+  footer .dropdown-container {
+    width: 100%;
+  }
 }
 
 footer .scroll-top-btn-container {
-    position: absolute;
-    top: 0;
-    right: 3.2rem;
+  position: absolute;
+  top: 0;
+  right: 3.2rem;
 }
