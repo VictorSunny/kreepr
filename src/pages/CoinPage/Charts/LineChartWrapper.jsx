@@ -1,10 +1,9 @@
-import { lazy } from 'react';
 import { useQuery } from '@tanstack/react-query';
-
-import { fetchCoinChartData } from '../../../services/fetchCoinData';
-
+import { lazy } from 'react';
 import { useState } from 'react';
+
 import { useThemeContext } from '../../../contexts/ThemeContext';
+import { fetchCoinChartData } from '../../../services/fetchCoinData';
 import HistoryTimeframeDropdown from '../HistoryTimeframeDropdown';
 import './lineChartWrapper.css';
 import { useApiQueryContext } from '../../../contexts/ApiQueryContext';

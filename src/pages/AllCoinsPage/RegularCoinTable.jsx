@@ -1,10 +1,10 @@
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 import PercentChange from '../../components/PercentChange/PercentChange';
-import toOneDecimal from '../../utilities/toOneDecimal';
-import numberGrouper from '../../utilities/numberGrouper';
 import amountGrouper from '../../utilities/amountGrouper';
+import numberGrouper from '../../utilities/numberGrouper';
+import toOneDecimal from '../../utilities/toOneDecimal';
 import './RegularCoinsTable.css';
 
 import { useApiQueryContext } from '../../contexts/ApiQueryContext';
@@ -116,7 +116,7 @@ function CoinMeta({ coin }) {
       <div className="coin-details">
         <div className="coin-rank">#{coinMarketCapRank}</div>
         <div className="coin-ticker-id">{String(CoinTickerSymbol).toUpperCase()}</div>
-        <div className="coin-name">dnjdjdnjnd{coinName}</div>
+        <div className="coin-name">{coinName}</div>
       </div>
     </div>
   );

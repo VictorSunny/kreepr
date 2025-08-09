@@ -1,4 +1,5 @@
 import { useNavigate, useNavigationType } from 'react-router-dom';
+
 import BackArrowIcon from '../../assets/icons/back-arrow-curved.svg?react';
 import './PrevPageButton.css';
 

@@ -1,22 +1,20 @@
-import { useEffect, lazy } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { useEffect, lazy } from 'react';
+import { useParams } from 'react-router-dom';
+
+import DislikeIcon from '../../assets/icons/thumbs-down-black-icon.svg?react';
+import LikeIcon from '../../assets/icons/thumbs-up-black-icon.svg?react';
+import NoDataSignal from '../../components/LoadSignals/NoDataSignal';
+import PrevPageButton from '../../components/PrevPageButton/PrevPageButton';
+import { useApiQueryContext } from '../../contexts/ApiQueryContext';
+import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
+import { fetchCoinData } from '../../services/fetchCoinData';
+import amountGrouper from '../../utilities/amountGrouper';
+import dateFormatter from '../../utilities/dateFormatter';
+import numberGrouper from '../../utilities/numberGrouper';
+import urlParser from '../../utilities/urlParser';
 
 import LineChartWrapper from './Charts/LineChartWrapper';
-import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
-import { useApiQueryContext } from '../../contexts/ApiQueryContext';
-
-import { fetchCoinData } from '../../services/fetchCoinData';
-
-import PrevPageButton from '../../components/PrevPageButton/PrevPageButton';
-import NoDataSignal from '../../components/LoadSignals/NoDataSignal';
-
-import urlParser from '../../utilities/urlParser';
-import amountGrouper from '../../utilities/amountGrouper';
-import numberGrouper from '../../utilities/numberGrouper';
-import dateFormatter from '../../utilities/dateFormatter';
-
-import LikeIcon from '../../assets/icons/thumbs-up-black-icon.svg?react';
-import DislikeIcon from '../../assets/icons/thumbs-down-black-icon.svg?react';
 
 const LineLoadingSignal = lazy(() => import('../../components/LoadSignals/LineLoadingSignal'));
 const ReloadSignal = lazy(() => import('../../components/LoadSignals/ReloadSignal'));
@@ -24,7 +22,6 @@ const ReloadSignal = lazy(() => import('../../components/LoadSignals/ReloadSigna
 // const historicData = lazy(() => import('../../services/historicData'))
 
 import './CoinPage.css';
-import { useParams } from 'react-router-dom';
 
 function CoinPage() {
   ////    PAGE DISPLAYING EXTRA INFORMATION ON COIN, AS WELL AS CHARTS

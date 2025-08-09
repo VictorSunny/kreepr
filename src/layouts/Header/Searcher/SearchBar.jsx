@@ -1,13 +1,11 @@
+import { useQuery } from '@tanstack/react-query';
 import { useState, useRef, useEffect, lazy } from 'react';
 import { Link } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
-import useResetStates from '../../../hooks/useResetStates';
 
 import Backdrop from '../../../components/Backdrop/Backdrop';
 import NoDataSignal from '../../../components/LoadSignals/NoDataSignal';
-
+import useResetStates from '../../../hooks/useResetStates';
 import fetchSearchedCoins from '../../../services/fetchSearchedCoins';
-
 import sleep from '../../../utilities/sleep';
 
 import './SearchBar.css';

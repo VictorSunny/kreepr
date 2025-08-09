@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
-import currencyShortener from '../../utilities/numberShortener';
-import { useApiQueryContext } from '../../contexts/ApiQueryContext';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
+import { useApiQueryContext } from '../../contexts/ApiQueryContext';
+import currencyShortener from '../../utilities/numberShortener';
 
 import './PopularCoinCard.css';
 import PercentChange from '../../components/PercentChange/PercentChange';

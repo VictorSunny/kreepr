@@ -1,3 +1,5 @@
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
+import { AnimatePresence } from 'framer-motion';
 import { React, lazy, Suspense, useEffect } from 'react';
 import {
   createBrowserRouter,
@@ -6,14 +8,12 @@ import {
   ScrollRestoration,
   useNavigate,
 } from 'react-router-dom';
-import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
-import { AnimatePresence } from 'framer-motion';
-import Header from './layouts/Header/Header';
-import Footer from './layouts/Footer/Footer';
 
-import AnimatedPageWrapper from './pages/AnimatedPageWrapper';
-import LineLoadingSignal from './components/LoadSignals/LineLoadingSignal';
 import ErrorSignal from './components/LoadSignals/ErrorSignal';
+import LineLoadingSignal from './components/LoadSignals/LineLoadingSignal';
+import Footer from './layouts/Footer/Footer';
+import Header from './layouts/Header/Header';
+import AnimatedPageWrapper from './pages/AnimatedPageWrapper';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const AllCoinsPage = lazy(() => import('./pages/AllCoinsPage/AllCoinsPage'));

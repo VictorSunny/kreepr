@@ -1,14 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
-import useResetStates from '../../hooks/useResetStates';
+import SuccessIcon from '../../assets/icons/green-checkmark-line-icon.svg?react';
+import ErrorIcon from '../../assets/icons/red-x-line-icon.svg?react';
 import BackDrop from '../../components/Backdrop/Backdrop';
-
+import useResetStates from '../../hooks/useResetStates';
 import sleep from '../../utilities/sleep';
 
-import ErrorIcon from '../../assets/icons/red-x-line-icon.svg?react';
-import SuccessIcon from '../../assets/icons/green-checkmark-line-icon.svg?react';
-import { useEffect } from 'react';
 
 function PopupSignal({ popupType, popupMessageContinuousVerb }) {
   ////    POPUP MODAL TO SIGNAL USER ON REQUEST RESPONSE.

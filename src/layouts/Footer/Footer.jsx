@@ -1,16 +1,18 @@
 import './Footer.css';
 
-import BriefcaseIcon from '../../assets/icons/briefcase-icon.svg?react';
-import ContactForm from './ContactForm';
-import DiscordLogo from '../../assets/icons/discord-logo.svg?react';
-import GithubLogo from '../../assets/icons/github-icon.svg?react';
 import { Link } from 'react-router-dom';
-import LinkedinLogo from '../../assets/icons/linkedin-square-icon.svg?react';
+
+import BriefcaseIcon from '../../assets/icons/briefcase-icon.svg?react';
+import DiscordLogo from '../../assets/icons/discord-logo.svg?react';
 import MailIcon from '../../assets/icons/envelope-icon.svg?react';
+import GithubLogo from '../../assets/icons/github-icon.svg?react';
+import LinkedinLogo from '../../assets/icons/linkedin-square-icon.svg?react';
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 import SiteLogo from '../../components/SiteLogo/SiteLogo';
 
+import ContactForm from './ContactForm';
 import PreferredCurrencyDropdown from './PreferredCurrencyDropdown';
-import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
+
 
 export default function Footer() {
   ////    SITE FOOTER

@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 import { useSiteNavigationContext } from '../../../contexts/SiteNavigationContext';
 import './Navbar.css';
 

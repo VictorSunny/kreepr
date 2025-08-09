@@ -1,10 +1,13 @@
-import { useEffect, lazy } from 'react';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { motion } from 'framer-motion';
+import { useEffect, lazy } from 'react';
+
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
+import { useApiQueryContext } from '../../contexts/ApiQueryContext';
+import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
 import fetchAllCoins from '../../services/fetchAllCoins';
 
-import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
-import { useApiQueryContext } from '../../contexts/ApiQueryContext';
+
 import CoinSorterDropdown from './CoinSorterDropdown';
 import RegularCoinTable from './RegularCoinTable';
 
@@ -12,7 +15,6 @@ const LineLoadingSignal = lazy(() => import('../../components/LoadSignals/LineLo
 const ReloadSignal = lazy(() => import('../../components/LoadSignals/ReloadSignal'));
 
 import './AllCoinsPage.css';
-import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 
 export default function AllCoinsPage() {
   ////    PAGE DISPLAYING TABLE FOR COINS

@@ -1,5 +1,6 @@
 import { useEffect, useState, lazy } from 'react';
 import { useLocation } from 'react-router-dom';
+
 import Hamburgericon from '../../../assets/icons/hamburger-menu-icon.svg?react';
 import './HamburgerMenu.css';
 import Backdrop from '../../../components/Backdrop/Backdrop';

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
+
 import Hamburgericon from '../../../assets/icons/hamburger-menu-icon.svg?react';
-import SearchBar from '../Searcher/SearchBar';
 import DropdownList from '../../../components/DropdownList/DropdownList';
 import PreferredCurrencyDropdown from '../../Footer/PreferredCurrencyDropdown';
+import SearchBar from '../Searcher/SearchBar';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 export default function Sidebar({ closeButtonCallback }) {
   const dropdownItems = [

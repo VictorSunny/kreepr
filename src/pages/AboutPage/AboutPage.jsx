@@ -1,17 +1,18 @@
 import { useEffect } from 'react';
-import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
+
 
 // hero section icons imports
-import HtmlLogo from '../../assets/logos/html-logo.svg';
+import ChartjsLogo from '../../assets/logos/chartjs-logo.svg';
+import CoingeckoLogo from '../../assets/logos/coingecko-logo.svg';
 import CssLogo from '../../assets/logos/css-logo.svg';
+import FramerMotionLogo from '../../assets/logos/framer-motion-logo.svg';
+import HtmlLogo from '../../assets/logos/html-logo.svg';
 import JavascriptLogo from '../../assets/logos/javascript-logo.svg';
 import ReactLogo from '../../assets/logos/react-logo.svg';
-import FramerMotionLogo from '../../assets/logos/framer-motion-logo.svg';
-import ViteLogo from '../../assets/logos/vite-logo.svg';
 import TanstackQueryLogo from '../../assets/logos/tanstack-query-logo.png';
-import ChartjsLogo from '../../assets/logos/chartjs-logo.svg';
 import VscLogo from '../../assets/logos/visual-studio-code-logo.svg';
-import CoingeckoLogo from '../../assets/logos/coingecko-logo.svg';
+import ViteLogo from '../../assets/logos/vite-logo.svg';
+import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
 
 import './AboutPage.css';
 import '../../components/HeroSlider/HeroSlider.css';

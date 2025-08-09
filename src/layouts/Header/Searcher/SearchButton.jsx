@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
-import useResetStates from '../../../hooks/useResetStates';
-import SearchIcon from '../../../assets/icons/search-icon.svg?react';
+
 import CloseIcon from '../../../assets/icons/close-icon.svg?react';
+import SearchIcon from '../../../assets/icons/search-icon.svg?react';
+import useResetStates from '../../../hooks/useResetStates';
+
 import SearchBar from './SearchBar';
 import './SearchButton.css';
 

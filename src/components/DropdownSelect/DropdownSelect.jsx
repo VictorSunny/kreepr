@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
+
 import './DropdownSelect.css';
-import Backdrop from '../Backdrop/Backdrop';
 import useResetStates from '../../hooks/useResetStates';
+import Backdrop from '../Backdrop/Backdrop';
 
 export default function DropdownSelect({
   defaultValues,

@@ -1,10 +1,12 @@
-import { useEffect, lazy } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { useEffect, lazy } from 'react';
 
-import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
-import HeroSlider from '../../components/HeroSlider/HeroSlider';
-import PopularCoinCard from './PopularCoinCard';
 import GoToPageButton from '../../components/GoToPageButton/GoToPageButton';
+import HeroSlider from '../../components/HeroSlider/HeroSlider';
+import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
+
+import PopularCoinCard from './PopularCoinCard';
+
 import './Homepage.css';
 
 import fetchTrendingCoins from '../../services/fetchTrendingCoins';

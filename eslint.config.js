@@ -1,9 +1,16 @@
 import js from '@eslint/js'
+import eslintPluginImport from 'eslint-plugin-import'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import eslintPluginReact from 'eslint-plugin-react'
+
+import reactConfig from 'eslint-plugin-react/configs/recommended.js'
+import eslintConfigPrettier from 'eslint-config-prettier'
 
 export default [
+  reactConfig,
+  eslintConfigPrettier,
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],
@@ -17,6 +24,8 @@ export default [
       },
     },
     plugins: {
+      'react': eslintPluginReact,
+      'import': eslintPluginImport,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
@@ -28,7 +37,14 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      '@stylistic/quotes': ['errors', 'double'],
+      'import/order': [
+        'error',
+        {
+          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+          'newlines-between': 'always',
+          alphabetize: {order: 'asc', caseInsensitive: true},
+        },
+      ],
     },
   },
 ]

@@ -1,14 +1,13 @@
-import { useRef, lazy, Suspense } from 'react';
 import { Chart, registerables } from 'chart.js/auto';
+import { useRef, lazy, Suspense } from 'react';
 import 'chartjs-adapter-luxon';
 import Zoom from 'chartjs-plugin-zoom';
 import { Line } from 'react-chartjs-2';
 
-import numberShortener from '../../../utilities/numberShortener';
+import { useApiQueryContext } from '../../../contexts/ApiQueryContext';
 import chartTooltipAmountGrouper from '../../../utilities/chartTooltipAmountGrouper';
 import checkScreenWidth from '../../../utilities/checkScreenWidth';
-
-import { useApiQueryContext } from '../../../contexts/ApiQueryContext';
+import numberShortener from '../../../utilities/numberShortener';
 
 const ZoomInIcon = lazy(() => import('../../../assets/icons/zoom-in-icon.svg?react'));
 const ZoomOutIcon = lazy(() => import('../../../assets/icons/zoom-out-icon.svg?react'));
