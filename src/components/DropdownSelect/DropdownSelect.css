@@ -18,7 +18,7 @@
 }
     
 .dropdown-container button,
-.dropdown-container option {
+.dropdown-container div {
     z-index: inherit;
 }
 
@@ -82,7 +82,7 @@
 }
 
 
-.dropdown-options-container option {
+.dropdown-options-container div {
     cursor: pointer;
     text-transform: capitalize;
     padding: 0.4rem 1.6rem;
@@ -96,16 +96,16 @@
     color: var(--color-white);
 }
 
-.dropdown-options-container option:first-child {
+.dropdown-options-container div:first-child {
     border-top: none;
 }
-.dropdown-options-container option:last-child {
+.dropdown-options-container div:last-child {
     border-bottom: none;
 }
 @media (min-width: 992px) {
 
 
-    .dropdown-options-container option:hover {
+    .dropdown-options-container div:hover {
         border-color: var(--color-primary);
     }
     .dropdown-btn:hover::after {

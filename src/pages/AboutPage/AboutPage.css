@@ -24,6 +24,7 @@ h1.about-title {
     grid-template-columns: 1fr 1fr 1fr;
     width: max-content;
     justify-self: center;
+    margin-inline: auto;
     margin-block: 0.8rem;
     font-family: 'roboto-serif', 'Times New Roman', Times, serif;
     color: var(--color-large-text);
@@ -67,7 +68,9 @@ h1.about-title {
     box-shadow: none !important;
     border: none !important;
     max-width: 100% !important;
+    height: 4.8rem;
 }
+
 .about-hero-slider:hover * img {
     scale: 1 !important;
 }
@@ -79,7 +82,6 @@ h1.about-title {
 
 .about-hero-slider .hero-icon {
     height: 4rem;
-    width: max-content;
     border-radius: 0;
 }
 
@@ -97,10 +99,12 @@ h1.about-title {
     }
     .about-hero-slider {
         position: absolute !important;
-        inset: 0 0 0 0;
         z-index: 1 !important;
+        bottom: 4rem;
+        height: 7.2rem !important;
     }
     .about-hero-slider .hero-icon {
         height: 6.4rem;
     }
+
 }

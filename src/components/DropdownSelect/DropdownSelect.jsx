@@ -21,7 +21,7 @@ export default function DropdownSelect({defaultValues, optionsValues, setContext
     // close dropdown after selected value has been updated
     const changeDropdownValue = (e) => {
         // get value from clicked option
-        const newSelectedValue = {value: e.target.value, text: e.target.innerText};
+        const newSelectedValue = {value: e.target.dataset.value, text: e.target.innerText};
 
         // check if clicked option value matches currently selected option value
         const valueChanged = newSelectedValue.value != defaultValues.value;
@@ -55,16 +55,16 @@ export default function DropdownSelect({defaultValues, optionsValues, setContext
 
                                 // dropdown option listed. if option is selected, special style applies in class
                                 return (
-                                    <option
+                                    <div
                                     key={index}
                                     id={`option-${option.value}`}
-                                    value={option.value}
+                                    data-value={option.value}
                                     onClick={changeDropdownValue}
                                     className={option.value === defaultValues.value && 'selected-dropdown-option' || ''}>
                                         {
                                             option.text
                                         }
-                                    </option>
+                                    </div>
                                 )
                             })
                         }

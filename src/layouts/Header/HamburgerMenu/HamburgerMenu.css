@@ -55,6 +55,7 @@
 .primary-sidebar .dropdown-container {
     width: 50%;
     place-self: end;
+    margin-left: auto;
 }
 .primary-sidebar .dropdown-container button,
 .primary-sidebar .dropdown-container option,

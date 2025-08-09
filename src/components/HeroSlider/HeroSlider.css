@@ -5,19 +5,17 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100vw;
     padding-block: 0.8rem;
     display: flex;
     overflow: hidden;
     box-shadow: 0 0.4rem 0.8rem rgba(100, 100, 100, 0.4);
-    justify-self: center;
-    /* align-items: center; */
     place-self: center;
-    place-items: center;
 }
 
 .hero-slider-container {
-    height: 100%;
+    height: max-content;
     display: flex;
     min-width: 100%;
     position: relative;
@@ -58,8 +56,7 @@
 }
 
 .hero-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.4rem;
     border-radius: 50%;
     fill: var(--color-primary);
     transition: 0.4s;

@@ -29,6 +29,7 @@ ol, ul {
 
 
 *::-webkit-scrollbar {
+   display: none;
    background-color: var(--color-base);
    width: 0.4rem;
 }
@@ -37,6 +38,11 @@ ol, ul {
    background-color: var(--color-primary);
    width: 100%;
    border-radius: 0.4rem;
+}
+@media (min-width: 992px) {
+   *::-webkit-scrollbar {
+      display: initial;
+   }
 }
 
 main {
@@ -51,7 +57,6 @@ main {
       padding-inline: 2.4rem;
    }
 }
-
 @media (min-width: 1200px) {
    .page-container {
       padding-inline: 4.8rem;
@@ -181,6 +186,7 @@ button, a {
    margin-block: 2.4rem;
    justify-self: center;
    font-size: 1.1rem ;
+   margin-inline: auto;
 }
 
 .link-btn {
