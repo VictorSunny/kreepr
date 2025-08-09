@@ -36,7 +36,7 @@ function Navbar() {
                 }}
                 layout
               >
-                <Link to={`${link.value}`} className="breadcrumb-link">{`${link.text}`}</Link>
+                <Link to={`${link.value}`} className="breadcrumb-link" >{`${link.text}`}</Link>
               </motion.li>
             );
           })}

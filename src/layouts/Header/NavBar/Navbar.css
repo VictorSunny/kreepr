@@ -9,4 +9,6 @@
 
 .mobile-navbar li:not(:last-child)::after {
   content: '›';
+  margin-left: 0.2rem;
+  color: var(--color-primary);
 }
