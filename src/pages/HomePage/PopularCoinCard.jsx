@@ -50,7 +50,7 @@ export default function PopularCoinCard({coin, id, index}) {
                     <img src={coinThumb} className="coin-logo" loading="lazy" alt="coin logo"></img>
                     {/* <img src="/css-icon.svg" className="coin-logo"></img> */}
                 </div>
-                <div className="coin-detailss">
+                <div className="coin-details">
                     <div className="coin-rank">
                         #{coinMarketCapRank}
                     </div>
