@@ -96,6 +96,15 @@ function CoinPage() {
       return 'unavailable'
     }
   }
+  const numberGrouperFormatHelper = (numberValue) => {
+    if (numberValue) {
+      return (
+        numberGrouper.format(numberValue)
+      )
+    } else {
+      return 'unavailable'
+    }
+  }
   const dateFormatHelper = (dateISO) => {
     if (dateISO) {
       return (
@@ -120,8 +129,8 @@ function CoinPage() {
   const coinATHDate = dateFormatHelper(coinData?.market_data.ath_date[preferredCurrency.value]);
   const coinATLDate = dateFormatHelper(coinData?.market_data.atl_date[preferredCurrency.value]);
 
-  const coinTotalSupply = numberGrouper.format(coinData?.market_data.total_supply);
-  const coinCirculatingSupply = numberGrouper.format(coinData?.market_data.circulating_supply);
+  const coinTotalSupply = numberGrouperFormatHelper(coinData?.market_data.total_supply);
+  const coinCirculatingSupply = numberGrouperFormatHelper(coinData?.market_data.circulating_supply);
 
   const coinDescription = coinData?.description.en;
   const coinGenesisDate = coinData?.genesis_date;
