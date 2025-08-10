@@ -5,18 +5,23 @@ import DropdownList from '../../../components/DropdownList/DropdownList';
 import PreferredCurrencyDropdown from '../../Footer/PreferredCurrencyDropdown';
 import SearchBar from '../Searcher/SearchBar';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import { useSiteNavigationContext } from '../../../contexts/SiteNavigationContext';
 
 export default function Sidebar({ closeButtonCallback }) {
+
+  const {allUrls} = useSiteNavigationContext()
+ 
   const dropdownItems = [
     {
       heading: 'go to page',
       listItems: [
-        <Link to="" className="link-btn" aria-label="go to homepage">
-          home
-        </Link>,
-        <Link to="/about" className="link-btn" aria-label="go to about page">
-          about
-        </Link>,
+        ...allUrls.map((url) => {
+          return (
+            <Link to={url.value} className="link-btn" aria-label="go to about page">
+              {url.text}
+            </Link>
+          )
+        })
       ],
     },
     {
@@ -27,8 +32,9 @@ export default function Sidebar({ closeButtonCallback }) {
           target="_blank"
           className="link-btn"
           aria-label="visit website project readme document"
+          href="https://github.com/victorsunny/kreepr"
         >
-          ReadMe
+          Github repo
         </a>,
       ],
     },
