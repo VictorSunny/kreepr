@@ -87,24 +87,38 @@ function CoinPage() {
     );
   }
 
+  const currencyFormatHelper = (currencyNumber) => {
+    if (currencyNumber) {
+      return (
+        currencyFormatter.format(currencyNumber)
+      )
+    } else {
+      return 'unavailable'
+    }
+  }
+  const dateFormatHelper = (dateISO) => {
+    if (dateISO) {
+      return (
+        dateFormatter(dateISO)
+      )
+    } else {
+      return ''
+    }
+  }
+
   // declare values to be used in page elements to reduce jsx verbosity
   const coinMarketCapRank = coinData?.market_cap_rank;
   const coinName = coinData?.name;
 
-  const coinPrice = currencyFormatter.format(
-    coinData?.market_data.current_price[preferredCurrency.value]
-  );
-  const coinMarketCap = currencyFormatter.format(
-    coinData?.market_data.market_cap[preferredCurrency.value]
-  );
-  const coinVolume = currencyFormatter.format(
-    coinData?.market_data.total_volume[preferredCurrency.value]
-  );
+  const coinPrice = currencyFormatHelper(coinData?.market_data.current_price[preferredCurrency.value])
+  const coinMarketCap = currencyFormatHelper(coinData?.market_data.market_cap[preferredCurrency.value])
+  const coinVolume = currencyFormatHelper(coinData?.market_data.total_volume[preferredCurrency.value])
 
-  const coinATH = currencyFormatter.format(coinData?.market_data.ath[preferredCurrency.value]);
-  const coinATL = currencyFormatter.format(coinData?.market_data.atl[preferredCurrency.value]);
-  const coinATHDate = dateFormatter(coinData?.market_data.ath_date[preferredCurrency.value]);
-  const coinATLDate = dateFormatter(coinData?.market_data.atl_date[preferredCurrency.value]);
+  const coinATH = currencyFormatHelper(coinData?.market_data.ath[preferredCurrency.value]);
+  const coinATL = currencyFormatHelper(coinData?.market_data.atl[preferredCurrency.value]);
+
+  const coinATHDate = dateFormatHelper(coinData?.market_data.ath_date[preferredCurrency.value]);
+  const coinATLDate = dateFormatHelper(coinData?.market_data.atl_date[preferredCurrency.value]);
 
   const coinTotalSupply = numberGrouper.format(coinData?.market_data.total_supply);
   const coinCirculatingSupply = numberGrouper.format(coinData?.market_data.circulating_supply);
