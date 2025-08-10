@@ -29,9 +29,9 @@
 }
 
 .coin-intro-details-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  text-align: center;
   width: max-content;
   gap: 0.4rem;
   grid-template-columns: 1fr !important;
@@ -40,6 +40,7 @@
 .intro-logo-name {
   display: flex;
   gap: 0.4rem;
+  align-items: end;
 }
 
 .coin-sticky-intro {
@@ -58,20 +59,9 @@
   border-radius: 50%;
 }
 
-.coin-sticky-intro > * {
-  height: max-content;
-  place-self: end;
-}
-
 .coin-page-container .coin-rank {
   font-size: 1.2rem;
   color: var(--color-large-text);
-}
-
-@media (min-width: 481px) {
-  .intro-container {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .coin-page-container .vote-icon {
@@ -110,9 +100,9 @@
 }
 
 .about-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem !important;
   text-align: center;
   user-select: contain;
 }
@@ -185,7 +175,9 @@
     grid-area: links-section;
   }
   .coin-intro-details-container {
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    place-items: end;
+    gap: 1.6rem;
   }
 }
 

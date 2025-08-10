@@ -146,7 +146,7 @@ function CoinPage() {
               alt="coin logo"
             ></img>
             {/* <img className="coin-logo" src="/css-icon.svg" loading="eager" alt="coin logo"></img> */}
-            <h2 className="coin-ticker-name">{coinData?.symbol.toUpperCase()}</h2>
+            <h3 className="coin-ticker-name">{coinData?.symbol.toUpperCase()}</h3>
           </div>
           <h3>{coinName}</h3>
         </div>
@@ -164,6 +164,7 @@ function CoinPage() {
         </div>
 
         <div className="section currencies-section section-2">
+
           <div className="sub-section">
             <p className="coin-rank">Rank: #{coinMarketCapRank}</p>
             <p>
@@ -179,6 +180,7 @@ function CoinPage() {
               <span>{coinVolume}</span>
             </p>
           </div>
+      
           <div className="sub-section">
             <p>
               <span className="title">Total Supply:</span>
