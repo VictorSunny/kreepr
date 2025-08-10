@@ -20,7 +20,7 @@ export default function ContactForm() {
     nameField.current.value = '';
     emailField.current.value = '';
     messageField.current.value = '';
-    sendButton.current.textContent = 'Send !';
+    sendButton.current.textContent = 'send';
   };
 
   // reset form on page navigation
@@ -103,7 +103,7 @@ export default function ContactForm() {
           type="submit"
           aria-label="contact form sumbit"
         >
-          Send !
+          send
         </button>
       </form>
     </div>
