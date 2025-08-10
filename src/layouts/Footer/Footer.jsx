@@ -179,10 +179,6 @@ function FooterSiteLinksSection() {
     <>
       <div className="footer-section">
         <h3 className="footer-section-title">Site</h3>
-
-        <div>
-          <PreferredCurrencyDropdown />
-        </div>
         <div className="footer-links-container">
           <Link to={''} className="link-btn footer-text-link" aria-label="go to homepage">
             Popular Coins
@@ -202,6 +198,9 @@ function FooterSiteLinksSection() {
           >
             About
           </Link>
+        </div>
+        <div>
+          <PreferredCurrencyDropdown />
         </div>
       </div>
     </>
