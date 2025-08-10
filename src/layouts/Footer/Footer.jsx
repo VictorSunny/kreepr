@@ -134,7 +134,7 @@ function FooterOuterLinksSection() {
           <h3 className="footer-section-title">Documentation</h3>
           <div className="footer-links-container">
             <a
-              href="https://github.com"
+              href="https://github.com/victorsunny/kreepr"
               aria-label="visit site doc"
               target="_blank"
               rel="noopener noreferrer"
@@ -149,7 +149,7 @@ function FooterOuterLinksSection() {
           <h3 className="footer-section-title">Source</h3>
           <div className="footer-links-container">
             <a
-              href="https://github.com"
+              href="https://github.com/victorsunny/kreepr"
               target="_blank"
               rel="noopener noreferrer"
               className="link-btn footer-text-link"
