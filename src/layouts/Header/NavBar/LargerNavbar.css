@@ -5,6 +5,12 @@
   align-content: center;
 }
 
+@media (max-width: 480px) {
+  #larger-navbar {
+    margin-block: 0.8rem;
+  }
+}
+
 .site-nav-links {
   display: grid;
   grid-template-rows: 1fr;

@@ -1,21 +1,27 @@
 .searched-coin {
   display: grid;
   grid-template-columns: 4rem 1fr;
-  width: 100%;
-  height: 100%;
   gap: 0.8rem;
   text-align: left;
   color: var(--color-medium-text);
-  z-index: inherit;
+  z-index: 8;
   cursor: pointer;
   min-height: 4rem;
+  width: 100%;
   gap: 0.4rem;
+  user-select:none;
 }
 
 .searched-coin > * {
-  cursor: pointer;
   align-self: center;
   padding: 0.4rem 0.8rem;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 7;
 }
 
 .searched-coin .searched-thumb {
@@ -43,16 +49,11 @@
   max-height: 32vh;
   overflow-y: scroll;
   z-index: 8;
-  display: none;
+  display: block;
 }
 
 .search-popup::-webkit-scrollbar-track {
   background-color: var(--color-base-complimentary);
-}
-
-.show-search-popup,
-.search-popup:hover {
-  display: block;
 }
 
 .search-popup .signal-modal div {
