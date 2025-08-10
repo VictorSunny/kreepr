@@ -249,9 +249,10 @@ function CoinPage() {
 
         <div className="section links-section section-5">
           <div className="coin-links-container">
+
             <div>
               <span className="title section-title">Links</span>
-              <div>
+              <ol className="coin-sub-links-list">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -268,8 +269,9 @@ function CoinPage() {
                 >
                   Whitepaper
                 </a>
-              </div>
+              </ol>
             </div>
+
             <div>
               <span className="title section-title">Blockchain Sites</span>
               <ol className="coin-sub-links-list">
@@ -287,7 +289,10 @@ function CoinPage() {
                         </a>
                       </li>
                     );
-                  })) || <NoDataSignal expectedData={'blockchain site links'} />}
+                  }))
+                  ||
+                  <NoDataSignal expectedData={'blockchain site links'} />
+                }
               </ol>
             </div>
           </div>

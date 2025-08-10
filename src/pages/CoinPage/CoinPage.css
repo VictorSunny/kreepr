@@ -33,7 +33,7 @@
   place-items: center;
   text-align: center;
   width: max-content;
-  gap: 0.8rem;
+  gap: 0.4rem;
   grid-template-columns: 1fr !important;
 }
 
@@ -47,7 +47,7 @@
   margin-block: 0.4rem;
   margin-bottom: 1.6rem;
   box-shadow: 0 0.4rem 0.4rem rgba(100, 100, 100, 0.2);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .coin-sticky-intro .coin-logo {
@@ -133,11 +133,6 @@
   row-gap: 0.8rem;
 }
 
-.coin-links-container {
-  display: block;
-  overflow: auto;
-}
-
 .coin-link {
   padding: 0.8em 1.6em;
   margin-block: 0.4em;
@@ -150,9 +145,9 @@
 }
 
 .coin-links-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .coin-sub-links-list {
@@ -213,12 +208,6 @@
       'chart-section chart-section chart-section chart-section chart-section chart-section currencies-section currencies-section'
       'chart-section chart-section chart-section chart-section chart-section chart-section high-low-section high-low-section'
       'about-section about-section about-section about-section about-section links-section links-section links-section';
-  }
-
-  .coin-links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
   }
 
   .currencies-section p,
