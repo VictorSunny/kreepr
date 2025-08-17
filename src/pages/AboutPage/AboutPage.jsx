@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 
-
 // hero section icons imports
 import ChartjsLogo from '../../assets/logos/chartjs-logo.svg';
 import CoingeckoLogo from '../../assets/logos/coingecko-logo.svg';

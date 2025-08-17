@@ -25,19 +25,19 @@ export default function SearchBar({ mobileTriggered }) {
   const _stateResetLog = useResetStates([setSearchEngaged]);
 
   // set abortcontroller ref for blocking excessive api calls upon each letter typed in search box
-  const controllerRef = useRef()
+  const controllerRef = useRef();
   // set ref for search bar
   const searchBarInput = useRef();
 
   // function for changing search query
   const changeSearchQuery = async () => {
     // check if search input is empty. if empty, display search prompt in search popup
-    const searchText = searchBarInput.current.value
+    const searchText = searchBarInput.current.value;
 
     // check if search value is empty and set state value accordingly. will determine whether to show search helper message
     if (searchText == '') {
-      setUserHasTyped(false)
-     } else {
+      setUserHasTyped(false);
+    } else {
       setUserHasTyped(true);
     }
 
@@ -46,8 +46,8 @@ export default function SearchBar({ mobileTriggered }) {
     // assert that user is typing to display search popup and backdrop
     setSearchEngaged(true);
     // send search input to search popup to handle api querying
-    (searchText != '') && setSearchQuery(searchText);
-  }
+    searchText != '' && setSearchQuery(searchText);
+  };
 
   // function triggered each time search input changes
   const searchAction = () => {
@@ -55,15 +55,15 @@ export default function SearchBar({ mobileTriggered }) {
     controllerRef.current = new AbortController();
     // if previous searchaction is running, terminate previous
     if (controllerRef.current) {
-      controllerRef.current.abort()
-    };
+      controllerRef.current.abort();
+    }
 
-    changeSearchQuery()
+    changeSearchQuery();
   };
 
   const handleFocus = () => {
-    setSearchEngaged(true)
-  }
+    setSearchEngaged(true);
+  };
 
   // if searchbar component mount is mobile triggered, auto focus on searchbar
   useEffect(() => {
@@ -75,8 +75,7 @@ export default function SearchBar({ mobileTriggered }) {
       searchBarInput.current.value = '';
       setSearchQuery('');
     }
-  }, [searchEngaged])
-
+  }, [searchEngaged]);
 
   return (
     <div id="search-bar-container">
@@ -91,10 +90,7 @@ export default function SearchBar({ mobileTriggered }) {
       ></input>
       {searchEngaged && (
         <>
-          <SearchPopup
-            searchQuery={searchQuery}
-            userHasTyped={userHasTyped}
-          />
+          <SearchPopup searchQuery={searchQuery} userHasTyped={userHasTyped} />
           <Backdrop setPopoverDisplayState={setSearchEngaged} />
         </>
       )}
@@ -106,7 +102,7 @@ function SearchPopup({ searchQuery, userHasTyped }) {
   ////    POPUP DISPLAYING LIST OF COINS BASED ON USER'S SEARCH
 
   // // const searchResults = searchData
-  
+
   // object containing context values for api querying
   const apiQuery = {
     searchQuery: searchQuery,
@@ -129,26 +125,22 @@ function SearchPopup({ searchQuery, userHasTyped }) {
       <div className="search-popup">
         <p className="search-popup-hint">type something to search</p>
       </div>
-    )
+    );
   }
- 
+
   return (
     <div className="search-popup">
-      {
-        (isFetching) &&
-        <LineLoadingSignal />
-        ||
-        (isError && !isFetching) &&
-        <ReloadSignal refreshActionName={'searching'} refreshClickFn={refetch} />
-        ||
-        (Array.isArray(searchResults) && (searchResults.length == 0)) &&
-        <NoDataSignal expectedData={"matching coins"} />
-        ||
-        (Array.isArray(searchResults)) &&
-        searchResults.map((result, index) => {
-          return <SearchedCoin key={index} coinInfo={result} />;
-        })
-      }
+      {(isFetching && <LineLoadingSignal />) ||
+        (isError && !isFetching && (
+          <ReloadSignal refreshActionName={'searching'} refreshClickFn={refetch} />
+        )) ||
+        (Array.isArray(searchResults) && searchResults.length == 0 && (
+          <NoDataSignal expectedData={'matching coins'} />
+        )) ||
+        (Array.isArray(searchResults) &&
+          searchResults.map((result, index) => {
+            return <SearchedCoin key={index} coinInfo={result} />;
+          }))}
     </div>
   );
 }
@@ -163,7 +155,8 @@ function SearchedCoin({ coinInfo }) {
         {/* <img src="/css-icon.svg" className="searched-thumb"></img> */}
       </div>
       <div className="searched-coin-meta">
-        <span className="searched-symbol">{coinInfo.symbol}</span> - <span className="searched-name">{coinInfo.name}</span>
+        <span className="searched-symbol">{coinInfo.symbol}</span> -{' '}
+        <span className="searched-name">{coinInfo.name}</span>
       </div>
     </Link>
   );

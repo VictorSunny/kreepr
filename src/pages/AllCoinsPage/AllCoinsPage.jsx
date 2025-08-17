@@ -7,7 +7,6 @@ import { useApiQueryContext } from '../../contexts/ApiQueryContext';
 import { useSiteNavigationContext } from '../../contexts/SiteNavigationContext';
 import fetchAllCoins from '../../services/fetchAllCoins';
 
-
 import CoinSorterDropdown from './CoinSorterDropdown';
 import RegularCoinTable from './RegularCoinTable';
 

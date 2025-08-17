@@ -8,9 +8,8 @@ import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { useSiteNavigationContext } from '../../../contexts/SiteNavigationContext';
 
 export default function Sidebar({ closeButtonCallback }) {
+  const { allUrls } = useSiteNavigationContext();
 
-  const {allUrls} = useSiteNavigationContext()
- 
   const dropdownItems = [
     {
       heading: 'go to page',
@@ -20,8 +19,8 @@ export default function Sidebar({ closeButtonCallback }) {
             <Link to={url.value} className="link-btn" aria-label="go to about page">
               {url.text}
             </Link>
-          )
-        })
+          );
+        }),
       ],
     },
     {

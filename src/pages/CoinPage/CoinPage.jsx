@@ -89,39 +89,39 @@ function CoinPage() {
 
   const currencyFormatHelper = (currencyNumber) => {
     if (currencyNumber) {
-      return (
-        currencyFormatter.format(currencyNumber)
-      )
+      return currencyFormatter.format(currencyNumber);
     } else {
-      return 'unavailable'
+      return 'unavailable';
     }
-  }
+  };
   const numberGrouperFormatHelper = (numberValue) => {
     if (numberValue) {
-      return (
-        numberGrouper.format(numberValue)
-      )
+      return numberGrouper.format(numberValue);
     } else {
-      return 'unavailable'
+      return 'unavailable';
     }
-  }
+  };
   const dateFormatHelper = (dateISO) => {
     if (dateISO) {
-      return (
-        dateFormatter(dateISO)
-      )
+      return dateFormatter(dateISO);
     } else {
-      return ''
+      return '';
     }
-  }
+  };
 
   // declare values to be used in page elements to reduce jsx verbosity
   const coinMarketCapRank = coinData?.market_cap_rank;
   const coinName = coinData?.name;
 
-  const coinPrice = currencyFormatHelper(coinData?.market_data.current_price[preferredCurrency.value])
-  const coinMarketCap = currencyFormatHelper(coinData?.market_data.market_cap[preferredCurrency.value])
-  const coinVolume = currencyFormatHelper(coinData?.market_data.total_volume[preferredCurrency.value])
+  const coinPrice = currencyFormatHelper(
+    coinData?.market_data.current_price[preferredCurrency.value]
+  );
+  const coinMarketCap = currencyFormatHelper(
+    coinData?.market_data.market_cap[preferredCurrency.value]
+  );
+  const coinVolume = currencyFormatHelper(
+    coinData?.market_data.total_volume[preferredCurrency.value]
+  );
 
   const coinATH = currencyFormatHelper(coinData?.market_data.ath[preferredCurrency.value]);
   const coinATL = currencyFormatHelper(coinData?.market_data.atl[preferredCurrency.value]);
@@ -187,7 +187,6 @@ function CoinPage() {
         </div>
 
         <div className="section currencies-section section-2">
-
           <div className="sub-section">
             <p className="coin-rank">Rank: #{coinMarketCapRank}</p>
             <p>
@@ -203,7 +202,7 @@ function CoinPage() {
               <span>{coinVolume}</span>
             </p>
           </div>
-      
+
           <div className="sub-section">
             <p>
               <span className="title">Total Supply:</span>
@@ -274,7 +273,6 @@ function CoinPage() {
 
         <div className="section links-section section-5">
           <div className="coin-links-container">
-
             <div>
               <span className="title section-title">Links</span>
               <ol className="coin-sub-links-list">
@@ -314,10 +312,7 @@ function CoinPage() {
                         </a>
                       </li>
                     );
-                  }))
-                  ||
-                  <NoDataSignal expectedData={'blockchain site links'} />
-                }
+                  })) || <NoDataSignal expectedData={'blockchain site links'} />}
               </ol>
             </div>
           </div>

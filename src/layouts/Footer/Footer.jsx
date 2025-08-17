@@ -13,7 +13,6 @@ import SiteLogo from '../../components/SiteLogo/SiteLogo';
 import ContactForm from './ContactForm';
 import PreferredCurrencyDropdown from './PreferredCurrencyDropdown';
 
-
 export default function Footer() {
   ////    SITE FOOTER
 

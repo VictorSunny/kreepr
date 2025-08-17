@@ -42,7 +42,6 @@ function SearchButton() {
               <CloseIcon className="icon dialogue-close-icon" loading="lazy" alt="close icon" />
             </button>
             <SearchBar mobileTriggered={searchEngaged} />
-            
           </div>
         </div>
       )}

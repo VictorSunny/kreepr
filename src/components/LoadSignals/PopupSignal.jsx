@@ -8,7 +8,6 @@ import BackDrop from '../../components/Backdrop/Backdrop';
 import useResetStates from '../../hooks/useResetStates';
 import sleep from '../../utilities/sleep';
 
-
 function PopupSignal({ popupType, popupMessageContinuousVerb }) {
   ////    POPUP MODAL TO SIGNAL USER ON REQUEST RESPONSE.
 
