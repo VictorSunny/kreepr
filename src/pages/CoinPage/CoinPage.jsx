@@ -319,7 +319,7 @@ function CoinPage() {
         </div>
       </div>
 
-      <PrevPageButton>Go Back</PrevPageButton>
+      <PrevPageButton>All Coins</PrevPageButton>
     </div>
   );
 }
