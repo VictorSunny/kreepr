@@ -71,7 +71,7 @@ export default function Sidebar({ closeButtonCallback }) {
           target="_blank"
           className="link-btn"
           aria-label="visit developer's portfolio site"
-          href="https://victorsunny.github.io"
+          href="https://victorsunny.vercel.app"
         >
           Portfolio
         </a>,
