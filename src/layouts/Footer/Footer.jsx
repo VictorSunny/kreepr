@@ -93,7 +93,7 @@ function FooterContactsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-a contact-link"
-                href="https://victorsunny.github.io"
+                href="https://victorsunny.vercel.app"
               >
                 Portfolio
                 <BriefcaseIcon
