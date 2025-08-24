@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-import { useApiQueryContext } from '../../contexts/ApiQueryContext';
-import currencyShortener from '../../utilities/numberShortener';
 import dollarCurrencyShortener from '../../utilities/dollarCurrencyFormatter'
 
 import './PopularCoinCard.css';
@@ -13,9 +11,9 @@ const MotionLink = motion.create(Link);
 export default function PopularCoinCard({ coin, id, index }) {
   ////    CARD COMPONENT DISPLAYING INFORMATION ON POPULAR COIN
 
-  const { preferredCurrency } = useApiQueryContext();
+  // all coin data is strictly in USD currency
+  // API provides USD data only
 
-  const currencyFormatter = currencyShortener(preferredCurrency.value);
   const dollarCurrencyFormatter = dollarCurrencyShortener()
 
   const coinMarketCapRank = coin.market_cap_rank;
@@ -30,7 +28,7 @@ export default function PopularCoinCard({ coin, id, index }) {
   const coinVolume = coin.data.total_volume.replace(/\D/g, '');
 
   const coinPastDayPriceChange = Number(
-    coin.data.price_change_percentage_24h[preferredCurrency.value].toFixed(1)
+    coin.data.price_change_percentage_24h['usd'].toFixed(1)
   );
 
   return (
