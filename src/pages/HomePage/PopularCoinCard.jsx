@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { useApiQueryContext } from '../../contexts/ApiQueryContext';
 import currencyShortener from '../../utilities/numberShortener';
+import dollarCurrencyShortener from '../../utilities/dollarCurrencyFormatter'
 
 import './PopularCoinCard.css';
 import PercentChange from '../../components/PercentChange/PercentChange';
@@ -15,6 +16,7 @@ export default function PopularCoinCard({ coin, id, index }) {
   const { preferredCurrency } = useApiQueryContext();
 
   const currencyFormatter = currencyShortener(preferredCurrency.value);
+  const dollarCurrencyFormatter = dollarCurrencyShortener()
 
   const coinMarketCapRank = coin.market_cap_rank;
   const CoinTickerSymbol = coin.symbol;
@@ -64,15 +66,15 @@ export default function PopularCoinCard({ coin, id, index }) {
         <tbody>
           <tr className="coin-price">
             <th scope="row">price:</th>
-            <td>{currencyFormatter.format(coinPrice)}</td>
+            <td>{dollarCurrencyFormatter.format(coinPrice)}</td>
           </tr>
           <tr className="coin-market-cap">
             <th scope="row">m.cap:</th>
-            <td>{currencyFormatter.format(coinMarketCap)}</td>
+            <td>{dollarCurrencyFormatter.format(coinMarketCap)}</td>
           </tr>
           <tr className="coin-volume">
             <th scope="row">volume:</th>
-            <td>{currencyFormatter.format(coinVolume)}</td>
+            <td>{dollarCurrencyFormatter.format(coinVolume)}</td>
           </tr>
         </tbody>
       </table>
