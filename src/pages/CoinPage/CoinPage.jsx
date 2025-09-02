@@ -82,7 +82,7 @@ function CoinPage() {
   if (isError && !isFetching) {
     return (
       <div className="page-container">
-        <ReloadSignal refreshActionName={'coin information'} refreshClickFn={refetch} />
+        <ReloadSignal refreshActionName={'loading coin information'} refreshClickFn={refetch} />
       </div>
     );
   }
