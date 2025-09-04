@@ -141,7 +141,7 @@ export default function AboutPage() {
           User signup will be added in the nearest future to grant features such as creation of
           watchlists, notifications, and more.
           <br />
-          Will be powered by Django.
+          Will be powered by FastAPI.
         </p>
       </div>
     </div>
