@@ -156,7 +156,7 @@ function FooterOuterLinksSection() {
               Github Repo
             </a>
             <a
-              href="https://victorsunny.github.io"
+              href="https://victorsunny.vercel.app"
               aria-label="visit the developer's portfolio"
               target="_blank"
               rel="noopener noreferrer"
