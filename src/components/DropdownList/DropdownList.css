@@ -9,8 +9,7 @@
 .drop-list-btn {
   min-width: 50%;
   border: none;
-  padding: 0.4em;
-  font-size: 1.2em;
+  padding: 0.4rem;
   font-family: inherit;
   color: var(--color-medium-text);
   background-color: transparent;
@@ -33,12 +32,11 @@
 
 .drop-list-content {
   display: none;
-  margin-top: 0.4em;
+  margin-top: 0.4rem;
 }
 
 .drop-list-content > * {
-  font-size: 1.1em;
-  line-height: 2.4em;
+  line-height: 2.4rem;
 }
 
 .active-drop-list .drop-list-content {
